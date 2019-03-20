@@ -1,6 +1,5 @@
 {
-  "name": "quide",
-  "app_id": "",
-  "type": "ionic-angular",
-  "integrations": {}
+  "name": "Quide",
+  "integrations": {},
+  "type": "angular"
 }
