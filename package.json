@@ -39,10 +39,15 @@
     "@angular/language-service": "~7.2.2",
     "@ionic/angular-toolkit": "~1.4.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "@ionic/lab": "1.0.24",
 =======
     "@ionic/app-scripts": "^3.2.3",
 >>>>>>> 7dd2e805c2efa18e643306f99bd4e47c38cd1670
+=======
+    "@ionic/lab": "1.0.24",
+    "@ionic/app-scripts": "^3.2.3",
+>>>>>>> 07061feac03d8e56ab7b19434eca3ea88ae8d276
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~10.12.0",
