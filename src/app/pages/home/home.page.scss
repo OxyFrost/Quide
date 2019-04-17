@@ -1,0 +1,31 @@
+
+
+
+.img-description {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 20px;
+  }
+
+
+.maCarte{
+    position: relative;
+}
+
+.imageCarte{
+    height: 100%;
+    width: 100%;
+}
+
+ion-image{
+    height: 100%;
+    width: 100%;
+}
+
+ion-card{
+    position: relative;
+}
