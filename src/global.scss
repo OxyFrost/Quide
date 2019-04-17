@@ -13,6 +13,8 @@
 
 ion-app, ion-header, ion-content{
     --background: linear-gradient(#030D17, #051B31);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
 }
 ion-tab-bar, ion-tab-button{
     --background: #051B31;
@@ -20,4 +22,18 @@ ion-tab-bar, ion-tab-button{
 }
 .tab-selected{
     color: white!important;
+}
+
+h1 {
+    color: #fff;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: lighter;
+    padding-left: 15px;
+}
+
+.logo {
+    align: center;
+    width: 200px;
+    height: 200px;
 }
