@@ -3,6 +3,7 @@
     <ion-title>inscription</ion-title>
   </ion-toolbar>
 </ion-header>
+
 <ion-list>
   <ion-item *ngFor="let item of items">
     <ion-thumbnail slot="start">
@@ -10,6 +11,25 @@
     </ion-thumbnail>
     <ion-label>{{item.text}}</ion-label>
   </ion-item>
+</ion-list>
+<ion-list>
+  <ion-radio-group>
+    <ion-list-header>
+      <ion-label></ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Professionnel</ion-label>
+      <ion-radio slot="start" value="Mme" checked></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Particulier</ion-label>
+      <ion-radio slot="start" value="M."></ion-radio>
+    </ion-item>
+
+   
+  </ion-radio-group>
 </ion-list>
 <ion-list>
   <ion-radio-group>
