@@ -11,7 +11,7 @@
 @import '~@ionic/angular/css/flex-utils.css';
 
 
-ion-app, ion-header, ion-content{
+ion-app, ion-header, ion-content, .form{
     --background: linear-gradient(#030D17, #051B31);
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 
@@ -28,12 +28,6 @@ h1 {
     color: #fff;
     font-size: 16px;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    font-weight: lighter;
-    padding-left: 15px;
-}
-
-.logo {
-    align: center;
-    width: 200px;
-    height: 200px;
+    font-weight: 300;
+    padding-left: 35px;
 }
