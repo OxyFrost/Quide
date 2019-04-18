@@ -1,0 +1,39 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+
+
+ion-app, ion-header, ion-content{
+    --background: linear-gradient(#030D17, #051B31);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+}
+ion-tab-bar, ion-tab-button{
+    --background: #051B31;
+    color: #ffffff96;
+}
+.tab-selected{
+    color: white!important;
+}
+
+h1 {
+    color: #fff;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: lighter;
+    padding-left: 15px;
+}
+
+.logo {
+    align: center;
+    width: 200px;
+    height: 200px;
+}
