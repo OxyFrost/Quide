@@ -1,50 +1,47 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>inscription</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
 
-<ion-list>
-  <ion-input type="file" accept="image/*"></ion-input>
-</ion-list>
+    <ion-input type="file" accept="image/*"></ion-input>
+    <ion-radio-group>
+        <ion-label>Professionnel</ion-label>
+        <ion-radio slot="start" value="Professionnel" checked></ion-radio>
 
-<ion-list>
-  <ion-radio-group>
-    <ion-item>
-      <ion-label>Professionnel</ion-label>
-      <ion-radio slot="start" value="Mme" checked></ion-radio>
+        <ion-label>Particulier</ion-label>
+        <ion-radio slot="start" value="Particulier"></ion-radio>
+    </ion-radio-group>
+
+    <ion-radio-group>
+        <ion-list-header>Civilité</ion-list-header>
+
+        <ion-label>Homme</ion-label>
+        <ion-radio slot="start" value="Homme" checked></ion-radio>
+
+        <ion-label>Femme</ion-label>
+        <ion-radio slot="start" value="Femme"></ion-radio>
+    </ion-radio-group>
+    <ion-item class="form">
+        <h1>Nom*</h1>
+    <ion-input></ion-input>
     </ion-item>
+    <ion-item class="form">
+        <h1>Prénom*</h1>
 
-    <ion-item>
-      <ion-label>Particulier</ion-label>
-      <ion-radio slot="start" value="M."></ion-radio>
+        <ion-input></ion-input>
     </ion-item>
-
-  </ion-radio-group>
-</ion-list>
-<ion-list>
-  <ion-radio-group>
-    <ion-list-header>
-      <ion-label>Civilité</ion-label>
-    </ion-list-header>
-
-    <ion-item>
-      <ion-label>Homme</ion-label>
-      <ion-radio slot="start" value="Homme" checked></ion-radio>
+    <ion-item class="form">
+        <h1>Téléphone*</h1>
+        <ion-input></ion-input>
     </ion-item>
-
-    <ion-item>
-      <ion-label>Femme</ion-label>
-      <ion-radio slot="start" value="Femme"></ion-radio>
+    <ion-item class="form">
+        <h1>Adresse Email*</h1>
+    <ion-input></ion-input>
     </ion-item>
-
-   
-  </ion-radio-group>
-</ion-list>
-<ion-input placeholder="Nom*"></ion-input>
-<ion-input placeholder="Prénom*"></ion-input>
-<ion-input placeholder="Téléphone*"></ion-input>
-<ion-input placeholder="Adresse Email*"></ion-input>
-<ion-input placeholder="Mot de passe*"></ion-input>
-<ion-input placeholder="Confirmer mot de passe*"></ion-input>
-<ion-button>C'est parti !</ion-button>
+    <ion-item class="form">
+        <h1>Mot de passe*</h1>
+        <ion-input></ion-input>
+    </ion-item>
+    <ion-item class="form">
+        <h1>Confirmer mot de passe*</h1>
+        <ion-input></ion-input>
+    </ion-item>
+    <ion-button class="se-connecter">C'est parti !</ion-button>
+</ion-content>
