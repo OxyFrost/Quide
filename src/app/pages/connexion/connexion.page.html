@@ -10,13 +10,13 @@
     <!-- Adresse e-mail -->
     <h1>Adresse e-mail</h1>
         <ion-item class="form">
-            <ion-input class="email" type="email" [(ngModel)]="email" required="required"></ion-input>
+            <ion-input class="email" type="email" [(ngModel)]="emailInput" required="required"></ion-input>
           </ion-item>
 
     <!-- Mot de passe -->
     <h1>Mot de passe</h1>
           <ion-item class="form">
-              <ion-input class="password" type="password" [(ngModel)]="password" required="required"></ion-input>
+              <ion-input class="password" type="password" [(ngModel)]="mdpInput" required="required"></ion-input>
             </ion-item>
 
     <!-- Mot de passe oublié-->
@@ -28,7 +28,7 @@
 
     <!-- Bouton "Se connecter"-->
     <div class="sign-in">
-        <ion-button class="se-connecter" fill="clear" mode="ios" href="">Se connecter</ion-button>
+        <ion-button class="se-connecter" fill="clear" mode="ios" (click)="connexion()">Se connecter</ion-button>
     </div>
 
     <!-- S'inscrire-->
