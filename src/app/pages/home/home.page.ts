@@ -15,18 +15,40 @@ import { Http, Response, RequestOptions, Headers, HttpModule } from '@angular/ht
 export class HomePage implements OnInit {
 
 donnees: Observable<any>;
+idCategorieAPI;
+nomCategorieAPI;
+i;
 
 constructor(public navCtrl: NavController, public httpClient: HttpClient, private router: Router, private http: Http) { }
 
 
-  affichageAccueil(){
-    this.donnees = this.httpClient.get('http://localhost:80/API_QUIDE/api/categorie/read.php');
+/*  chargerAccueil(){
+    this.i = 1;
+    this.donnees = this.httpClient.get('http://localhost:80/RESTful_API/api/categorie/read.php');
     this.donnees.subscribe(data => {
       console.log('my data: ', data); //Affiche dans la consonle le deuxieme tableau renvoyé par l'API
+      while (data[this.i]){
+      this.idCategorieAPI = data[this.i]['idCat'];
+      this.nomCategorieAPI = data[this.i]['nomCat'];
+      console.log(data[this.i]['nomCat']);
+      this.i = this.i +1;
+      }
     })
-  }
+  }*/
+
 
   ngOnInit() {
+    this.i = 1;
+    this.donnees = this.httpClient.get('http://localhost:80/RESTful_API/api/categorie/read.php');
+    this.donnees.subscribe(data => {
+      console.log('my data: ', data); //Affiche dans la consonle le deuxieme tableau renvoyé par l'API
+      while (data[this.i]){
+      this.idCategorieAPI = data[this.i]['idCat'];
+      this.nomCategorieAPI = data[this.i]['nomCat'];
+      console.log(data[this.i]['nomCat']);
+      this.i = this.i +1;
+      }
+    })
   }
 
 }

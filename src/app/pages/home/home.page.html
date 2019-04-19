@@ -6,10 +6,11 @@
 
 <ion-content padding>
 
-  <ion-button id="connection-button10" class="button button-stable button-block" (click)="affichageAccueil()">Se connecter </ion-button>
+  <ion-button id="connection-button10" class="button button-stable button-block" (click)="chargerAccueil()">Se connecter </ion-button>
   <ion-grid>
   <ion-row>
-    <ion-col>
+
+    <ion-col *ngFor="let donnee of donnees.data">
         <ion-card>
             <ion-img src="assets/img/party.jpg">
 
@@ -29,7 +30,7 @@
         </ion-card>
     </ion-col>
 
-    <ion-col>
+    <!-- <ion-col>
         <ion-card>
             <ion-img src="assets/img/party.jpg">
 
@@ -66,7 +67,7 @@
             Keep
           </ion-card-content>
         </ion-card>
-    </ion-col>
+    </ion-col> -->
 
   </ion-row>
 
