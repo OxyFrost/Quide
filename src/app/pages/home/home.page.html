@@ -6,21 +6,21 @@
 
 <ion-content padding>
 
-  <ion-button id="connection-button10" class="button button-stable button-block" (click)="chargerAccueil()">Se connecter </ion-button>
   <ion-grid>
   <ion-row>
 
-    <ion-col *ngFor="let donnee of donnees.data">
+    <ion-col *ngFor="let item of tableauCategories | keyvalue">
         <ion-card>
             <ion-img src="assets/img/party.jpg">
 
-                <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            <ion-card-subtitle >CHUI PERDU</ion-card-subtitle>
             <ion-card-title>Card Title</ion-card-title> <p>yolo</p>
             </ion-img>
           <ion-card-header>
 
-            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-            <ion-card-title>Card Title</ion-card-title>
+            <ion-card-subtitle>{{tableauCategories[item.key].idCat}}</ion-card-subtitle> <!-- affiche uniquement pour des tests -->
+
+            <ion-card-title>  {{ tableauCategories[item.key].nomCat }}</ion-card-title>
           </ion-card-header>
 
           <ion-card-content>
