@@ -5,72 +5,72 @@
 </ion-header>
 
 <ion-content padding>
-  
-  
+
   <ion-grid>
   <ion-row>
-    <ion-col>
+
+    <ion-col *ngFor="let item of tableauCategories | keyvalue">
         <ion-card>
             <ion-img src="assets/img/party.jpg">
-      
-                <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+
+            <ion-card-subtitle >CHUI PERDU</ion-card-subtitle>
             <ion-card-title>Card Title</ion-card-title> <p>yolo</p>
             </ion-img>
           <ion-card-header>
-            
-            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-            <ion-card-title>Card Title</ion-card-title>
+
+            <ion-card-subtitle>{{tableauCategories[item.key].idCat}}</ion-card-subtitle> <!-- affiche uniquement pour des tests -->
+
+            <ion-card-title>  {{ tableauCategories[item.key].nomCat }}</ion-card-title>
           </ion-card-header>
-        
+
           <ion-card-content>
-             
-            Keep 
+
+            Keep
           </ion-card-content>
         </ion-card>
     </ion-col>
 
-    <ion-col>
+    <!-- <ion-col>
         <ion-card>
             <ion-img src="assets/img/party.jpg">
-      
+
                 <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
             <ion-card-title>Card Title</ion-card-title> <p>yolo</p>
             </ion-img>
           <ion-card-header>
-            
+
             <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
             <ion-card-title>Card Title</ion-card-title>
           </ion-card-header>
-        
+
           <ion-card-content>
-             
-            Keep 
+
+            Keep
           </ion-card-content>
         </ion-card>
     </ion-col>
     <ion-col>
         <ion-card>
             <ion-img src="assets/img/party.jpg">
-      
+
                 <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
             <ion-card-title>Card Title</ion-card-title> <p>yolo</p>
             </ion-img>
           <ion-card-header>
-            
+
             <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
             <ion-card-title>Card Title</ion-card-title>
           </ion-card-header>
-        
+
           <ion-card-content>
-             
-            Keep 
+
+            Keep
           </ion-card-content>
         </ion-card>
-    </ion-col>
-    
+    </ion-col> -->
+
   </ion-row>
 
   </ion-grid>
-  
+
 </ion-content>
-  

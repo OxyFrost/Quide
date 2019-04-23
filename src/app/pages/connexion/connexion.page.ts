@@ -14,7 +14,6 @@ import {Http, Response, RequestOptions, Headers, HttpModule} from '@angular/http
 })
 export class ConnexionPage implements OnInit {
 
-
     donnees: Observable<any>;
     emailInput;
     emailAPI;
@@ -33,6 +32,7 @@ export class ConnexionPage implements OnInit {
     }
 
 
-    ngOnInit();
+    ngOnInit() {
+    }
 
 }
