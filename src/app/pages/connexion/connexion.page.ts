@@ -20,7 +20,6 @@ export class ConnexionPage implements OnInit {
     emailAPI;
     mdpInput;
     mdpAPI;
-    donnees: Observable<any>;
 
     constructor(public navCtrl: NavController, public httpClient: HttpClient, private router: Router, private http: Http) {
     }
@@ -31,7 +30,7 @@ export class ConnexionPage implements OnInit {
         this.donnees.subscribe(data => {
             console.log('my data: ', data); //Affiche dans la consonle le deuxieme tableau renvoyé par l'API
         });
-    };
+    }
 
 
     ngOnInit();
