@@ -1,7 +1,7 @@
 <ion-content>
 
     <ion-input type="file" accept="image/*"></ion-input>
-    <ion-radio-group>
+    <ion-radio-group [(ngModel)]="mdpInput">
         <ion-label>Professionnel</ion-label>
         <ion-radio slot="start" value="Professionnel" checked></ion-radio>
 
