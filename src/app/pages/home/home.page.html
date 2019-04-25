@@ -1,30 +1,17 @@
-
-
 <ion-content padding>
-  <ion-grid>
-    <ion-row>
-      <ion-col size="6" *ngFor="let item of tableauCategories | keyvalue">
-          <div class="id1">
-            <ion-img src="assets/img/categorie/{{tableauCategories[item.key].idCat}}.jpg" class="imageCategorie2"></ion-img>
-            <h2 class="titreCategorie">{{ tableauCategories[item.key].nomCat }}</h2>
-          </div>
-      </ion-col>
-      <!--<ion-card-subtitle>{{ tableauCategories[item.key].idCat }}</ion-card-subtitle>  affiche uniquement pour des tests -->
-      <!---- <ion-card-title>  {{ tableauCategories[item.key].nomCat }}</ion-card-title>-->
-    </ion-row>
-  <ion-row>
-
-        <ion-card *ngFor="let item of tableauCategories | keyvalue" routerLink="/categorie/{{ item.key }}" routerDirection="root">
-
-          <ion-card-header>
-
+    <ion-grid>
+        <ion-row>
+            <ion-col *ngFor="let item of tableauCategories | keyvalue" size="6" routerDirection="root"
+                     routerLink="/categorie/{{ item.key }}">
+                <div class="id1">
+                    <ion-img class="imageCategorie2"
+                             src="assets/img/categorie/{{tableauCategories[item.key].idCat}}.jpg"></ion-img>
+                    <h2 class="titreCategorie">{{ tableauCategories[item.key].nomCat }}</h2>
+                </div>
+            </ion-col>
             <!--<ion-card-subtitle>{{ tableauCategories[item.key].idCat }}</ion-card-subtitle>  affiche uniquement pour des tests -->
-            <ion-card-title>  {{ tableauCategories[item.key].nomCat }}</ion-card-title>
+            <!---- <ion-card-title>  {{ tableauCategories[item.key].nomCat }}</ion-card-title>-->
+        </ion-row>
 
-          </ion-card-header>
-        </ion-card>
-
-  </ion-row>
-
-  </ion-grid>
+    </ion-grid>
 </ion-content>
