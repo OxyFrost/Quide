@@ -1,7 +1,6 @@
 
 
 <ion-content padding>
-
   <ion-grid>
     <ion-row>
       <ion-col size="6" *ngFor="let item of tableauCategories | keyvalue">
@@ -13,7 +12,19 @@
       <!--<ion-card-subtitle>{{ tableauCategories[item.key].idCat }}</ion-card-subtitle>  affiche uniquement pour des tests -->
       <!---- <ion-card-title>  {{ tableauCategories[item.key].nomCat }}</ion-card-title>-->
     </ion-row>
-  </ion-grid>
+  <ion-row>
 
-<ion-nav [root]="connexionPage"></ion-nav>
+        <ion-card *ngFor="let item of tableauCategories | keyvalue" routerLink="/categorie/{{ item.key }}" routerDirection="root">
+
+          <ion-card-header>
+
+            <!--<ion-card-subtitle>{{ tableauCategories[item.key].idCat }}</ion-card-subtitle>  affiche uniquement pour des tests -->
+            <ion-card-title>  {{ tableauCategories[item.key].nomCat }}</ion-card-title>
+
+          </ion-card-header>
+        </ion-card>
+
+  </ion-row>
+
+  </ion-grid>
 </ion-content>

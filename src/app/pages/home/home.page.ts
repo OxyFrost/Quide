@@ -17,7 +17,6 @@ import { Http, Response, RequestOptions, Headers, HttpModule } from '@angular/ht
 })
 export class HomePage implements OnInit {
 
-
 donnees: Observable<any>;
 tableauCategories;
 
@@ -30,10 +29,6 @@ jsonObj = {
     '5' : [ {"nomCat" : "title5" , "idCat" : "desc5" }]
 }*/
 
-idCategorieAPI;
-ObjectToArray;
-nomCategorieAPI;
-
 constructor(public navCtrl: NavController, public httpClient: HttpClient, private router: Router, private http: Http) { }
 
   ngOnInit() {
@@ -42,5 +37,4 @@ constructor(public navCtrl: NavController, public httpClient: HttpClient, privat
         this.tableauCategories = data;
       });
   }
-
 }
