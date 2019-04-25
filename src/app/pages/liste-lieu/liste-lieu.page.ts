@@ -16,7 +16,7 @@ import {Http, Response, RequestOptions, Headers, HttpModule} from '@angular/http
 export class ListeLieuPage implements OnInit {
 
   donnees: Observable<any>;
-
+  donneesLieu;
 
   constructor(public navCtrl: NavController, public httpClient: HttpClient, private router: Router, private http: Http) {
   }
@@ -25,7 +25,7 @@ export class ListeLieuPage implements OnInit {
   listeLieu() {
     this.donnees = this.httpClient.get('http://localhost:80/API_QUIDE/api/lieuinsolite/read.php');
     this.donnees.subscribe(data => {
-      console.log('my data: ', data);
+      this.donneesLieu = data;
     });
   }
 

@@ -11,11 +11,12 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import {ListeLieuPageModule} from './pages/liste-lieu/liste-lieu.module';
+import {InfoLieuPageModule} from './pages/info-lieu/info-lieu.module';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, HttpModule, ListeLieuPageModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, HttpModule, ListeLieuPageModule, InfoLieuPageModule],
   providers: [
     StatusBar,
     SplashScreen,

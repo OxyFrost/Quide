@@ -1,3 +1,7 @@
 <ion-content>
   <ion-button class="se-connecter" (click)="listeLieu()" fill="clear" mode="ios">Se connecter</ion-button>
+
+  <ion-button expand="block" class="se-connecter" [routerLink]="['/info-lieu/', '1']" routerDirection="root"> Toast 1 </ion-button>
+  <ion-button expand="block" [routerLink]="['/info-lieu/', '2']" routerDirection="root"> Toast 2 </ion-button>
+  <ion-button expand="block" [routerLink]="['/info-lieu/', '3']" routerDirection="root"> Toast 3 </ion-button>
 </ion-content>
