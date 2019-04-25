@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-col *ngFor="let item of infoEtablissement | keyvalue">
+            <ion-text> {{infoEtablissement[item.key].idEtab}}</ion-text><br/>
+            <ion-text> {{infoEtablissement[item.key].nomEtab}}</ion-text><br/>
+            <ion-text> {{infoEtablissement[item.key].descriptionEtab}}</ion-text><br/>
+            <ion-text> {{infoEtablissement[item.key].adresseEtab}}</ion-text><br/>
+            <ion-text> {{infoEtablissement[item.key].codePostalEtab}}</ion-text><br/>
+            <ion-text> {{infoEtablissement[item.key].villeEtab}}</ion-text><br/>
+            <ion-text> {{infoEtablissement[item.key].siteEtab}}</ion-text><br/>
+            <ion-text> {{infoEtablissement[item.key].sousCatEtab}}</ion-text><br/>
+        </ion-col>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+</ion-content>
