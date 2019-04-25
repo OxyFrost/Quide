@@ -5,11 +5,11 @@
 </ion-header>
 
 <ion-content padding>
-
   <ion-grid>
   <ion-row>
 
-        <ion-card *ngFor="let item of tableauCategories | keyvalue">
+        <ion-card *ngFor="let item of tableauCategories | keyvalue" routerLink="/categorie/{{ item.key }}" routerDirection="root">
+
           <ion-card-header>
 
             <!--<ion-card-subtitle>{{ tableauCategories[item.key].idCat }}</ion-card-subtitle>  affiche uniquement pour des tests -->
@@ -21,6 +21,4 @@
   </ion-row>
 
   </ion-grid>
-
-<ion-nav [root]="connexionPage"></ion-nav>
 </ion-content>
