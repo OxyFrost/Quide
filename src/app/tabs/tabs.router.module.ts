@@ -53,6 +53,15 @@ const routes: Routes = [
         ]
       },
       {
+      path: 'connexion',
+      children: [
+        {
+          path: '',
+          loadChildren: '../pages/connexion/connexion.module#ConnexionPageModule'
+        }
+      ]
+    },
+      {
         path: '',
         redirectTo: '/tabs/home',
         pathMatch: 'full'
