@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
+
 import {ListeLieuPageModule} from './pages/liste-lieu/liste-lieu.module';
 import {InfoLieuPageModule} from './pages/info-lieu/info-lieu.module';
 import {InscriptionPageModule} from './pages/inscription/inscription.module';
@@ -18,7 +19,9 @@ import {ConnexionPageModule} from './pages/connexion/connexion.module';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
+  
     imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, HttpModule, ListeLieuPageModule, InfoLieuPageModule, InscriptionPageModule, ConnexionPageModule],
+
   providers: [
     StatusBar,
     SplashScreen,

@@ -18,7 +18,7 @@ export class ConnexionPage implements OnInit {
     emailInput;
     mdpInput;
     dataUser;
-
+  
     constructor(public navCtrl: NavController, public httpClient: HttpClient, private router: Router, private http: Http) {
     }
 
@@ -38,7 +38,6 @@ export class ConnexionPage implements OnInit {
             this.dataUser = data;
             console.log(data);
         });
-
     }
 
 

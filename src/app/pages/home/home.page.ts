@@ -8,7 +8,6 @@ import { Router } from '@angular/router';
 import { Http, Response, RequestOptions, Headers, HttpModule } from '@angular/http';
 
 
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.page.html',

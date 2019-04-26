@@ -22,6 +22,7 @@ export class InfoLieuPage implements OnInit {
   ngOnInit() {
 
     this.myId = this.activatedRoute.snapshot.paramMap.get('myid');
+
     // Initialize Params Object
     let params = new HttpParams();
 

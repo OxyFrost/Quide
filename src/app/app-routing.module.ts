@@ -14,7 +14,6 @@ const routes: Routes = [
   { path: 'info-lieu/:myid', loadChildren: './pages/info-lieu/info-lieu.module#InfoLieuPageModule' },
   { path: 'liste-lieu', loadChildren: './pages/liste-lieu/liste-lieu.module#ListeLieuPageModule' },
   { path: 'info-etablissement/:myid', loadChildren: './pages/info-etablissement/info-etablissement.module#InfoEtablissementPageModule' }
-
 ];
 @NgModule({
   imports: [
