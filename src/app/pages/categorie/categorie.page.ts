@@ -17,6 +17,7 @@ export class CategoriePage implements OnInit {
   myId = null;
   donnees: Observable<any>;
   tableauEtablissement;
+  tableauLieuInsolite;
 
   constructor(public navCtrl: NavController, public httpClient: HttpClient, private router: Router, private http: Http, private activatedRoute: ActivatedRoute) { }
 
@@ -26,7 +27,11 @@ export class CategoriePage implements OnInit {
         this.donnees.subscribe(data => {
           this.tableauEtablissement = data;
         })
-        console.log(this.tableauEtablissement);
+        this.donnees = this.httpClient.get('http://localhost:80/API_QUIDE/api/lieuinsolite/read.php');
+        this.donnees.subscribe(data => {
+          this.tableauLieuInsolite = data;
+        })
+        console.log(this.tableauLieuInsolite);
     }
 
 }
