@@ -11,11 +11,11 @@
 @import '~@ionic/angular/css/flex-utils.css';
 
 
-ion-app, ion-header, ion-content, .form{
+ion-app, ion-header, ion-content {
     --background: linear-gradient(#030D17, #051B31);
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-
 }
+
 ion-tab-bar, ion-tab-button{
     --background: #051B31;
     color: #ffffff96;
@@ -29,5 +29,17 @@ h1 {
     font-size: 16px;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 300;
-    padding-left: 35px;
+}
+
+p {
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+a:any-link {
+    color: #ffdd21;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }

@@ -5,15 +5,12 @@
     <div class="login-block">
         <!-- Adresse e-mail -->
         <h1>Adresse e-mail</h1>
-        <ion-item class="form">
+
             <ion-input class="email" type="email" [(ngModel)]="emailInput" required="required"></ion-input>
-        </ion-item>
 
         <!-- Mot de passe -->
         <h1>Mot de passe</h1>
-        <ion-item class="form">
             <ion-input class="password" type="password" [(ngModel)]="mdpInput" required="required"></ion-input>
-        </ion-item>
 
         <!-- Mot de passe oublié
 
@@ -32,7 +29,8 @@
     <!-- S'inscrire-->
     <div>
         <p class="sign-up">Vous n'avez pas encore de compte ?</p>
-        <ion-button class="inscription" fill="solid" mode="ios" href="">S'inscrire</ion-button>
+        <ion-button class="inscription" fill="solid" mode="ios" routerDirection="root"
+                    routerLink="/inscription">S'inscrire</ion-button>
     </div>
 
 </ion-content>

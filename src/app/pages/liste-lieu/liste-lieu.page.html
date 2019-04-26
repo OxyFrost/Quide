@@ -47,3 +47,92 @@
 
   </ion-grid>
 </ion-content>
+    <ion-title>liste-lieux</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-button class="se-connecter" (click)="listeLieu()" fill="clear" mode="ios">Se connecter</ion-button>
+
+  <ion-button expand="block" class="se-connecter" [routerLink]="['/info-lieu/', '1']" routerDirection="root"> Toast 1 </ion-button>
+  <ion-button expand="block" [routerLink]="['/info-lieu/', '2']" routerDirection="root"> Toast 2 </ion-button>
+  <ion-button expand="block" [routerLink]="['/info-lieu/', '3']" routerDirection="root"> Toast 3 </ion-button>
+
+  <!-- <div class="filtre">
+      <img src="assets/img/filter.svg"></div>
+   -->
+  <ion-card>
+    <img src="assets/img/italien.jpg">
+    <div class="test">
+      <ion-icon name="heart-empty"></ion-icon></div>
+    <div class="card-title">São Paulo</div>
+    <div class="card-subtitle">41 Listings</div>
+
+
+
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/img/resto.jpg">
+    <div class="test">
+      <ion-icon name="heart-empty"></ion-icon></div>
+    <div class="card-title">Amsterdam</div>
+    <div class="card-subtitle">64 Listings</div>
+
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/img/neonbar.jpg">
+    <div class="test">
+      <ion-icon name="heart-empty"></ion-icon></div>
+    <div class="card-title">San </div>
+    <div class="card-subtitle">72 Listings</div>
+
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/img/italien.jpg">
+    <div class="test">
+      <ion-icon name="heart-empty"></ion-icon></div>
+    <div class="card-title">Madison</div>
+    <div class="card-subtitle">28 Listings</div>
+
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/img/bar.jpg">
+    <div class="test">
+      <ion-icon name="heart-empty"></ion-icon></div>
+    <div class="card-title">São Paulo</div>
+    <div class="card-subtitle">41 Listings</div>
+
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/img/resto.jpg">
+    <div class="test">
+      <ion-icon name="heart-empty"></ion-icon></div>
+    <div class="card-title">Amsterdam</div>
+    <div class="card-subtitle">64 Listings</div>
+
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/img/bar.jpg">
+    <div class="test">
+      <ion-icon name="heart-empty"></ion-icon></div>
+    <div class="card-title">San F</div>
+    <div class="card-subtitle">72 Listings</div>
+
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/img/italien.jpg">
+    <div class="test">
+      <ion-icon name="heart-empty"></ion-icon></div>
+    <div class="card-title">Madison</div>
+    <div class="card-subtitle">28 Listings</div>
+
+  </ion-card>
+
+</ion-content>
