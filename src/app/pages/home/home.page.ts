@@ -20,14 +20,6 @@ export class HomePage implements OnInit {
 donnees: Observable<any>;
 tableauCategories;
 
-/* EXEMPLE D'UN OBJET JSON EN ARRAY
-jsonObj = {
-    '1' : [ {"nomCat" : "title1" , "idCat" : "desc1" }],
-    '2' : [ {"nomCat" : "title2" , "idCat" : "desc2" }],
-    '3' : [ {"nomCat" : "title3" , "idCat" : "desc3" }],
-    '4' : [ {"nomCat" : "title4" , "idCat" : "desc4" }],
-    '5' : [ {"nomCat" : "title5" , "idCat" : "desc5" }]
-}*/
 
 constructor(public navCtrl: NavController, public httpClient: HttpClient, private router: Router, private http: Http) { }
 

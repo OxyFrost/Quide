@@ -33,6 +33,16 @@
           </ion-card-header>
         </ion-card>
 
+        <ion-card *ngFor="let item of tableauEtablissement | keyvalue" routerLink="/info-etablissement/{{tableauEtablissement[item.key].idEtab}}"  routerDirection="root">
+
+          <ion-card-header *ngIf="myId==4 && (tableauEtablissement[item.key].sousCatEtab == 1  || tableauEtablissement[item.key].sousCatEtab == 2 ) ">
+
+
+            <ion-card-title>  {{ tableauEtablissement[item.key].nomEtab }} </ion-card-title>
+
+          </ion-card-header>
+        </ion-card>
+
   </ion-row>
 
   </ion-grid>
