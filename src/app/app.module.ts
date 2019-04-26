@@ -16,6 +16,7 @@ import {InfoLieuPageModule} from './pages/info-lieu/info-lieu.module';
 import {InscriptionPageModule} from './pages/inscription/inscription.module';
 import {ConnexionPageModule} from './pages/connexion/connexion.module';
 
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
