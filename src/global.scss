@@ -18,7 +18,7 @@ ion-app, ion-header, ion-content {
 
 ion-tab-bar, ion-tab-button{
     --background: #051B31;
-    color: #ffffff96;
+    color: #ffffff;
 }
 .tab-selected{
     color: white!important;
@@ -42,5 +42,12 @@ a:any-link {
     color: #ffdd21;
     text-decoration: none;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
 
+.form-email {
+    --background: #061221;
+}
+
+.form-mdp {
+    --background: #071526;
 }
