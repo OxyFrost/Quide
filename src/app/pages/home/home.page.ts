@@ -12,9 +12,9 @@ import { Http, Response, RequestOptions, Headers, HttpModule } from '@angular/ht
   selector: 'app-home',
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
+
 })
 export class HomePage implements OnInit {
-
 
 donnees: Observable<any>;
 tableauCategories;
@@ -28,18 +28,12 @@ jsonObj = {
     '5' : [ {"nomCat" : "title5" , "idCat" : "desc5" }]
 }*/
 
-idCategorieAPI;
-ObjectToArray;
-nomCategorieAPI;
-
 constructor(public navCtrl: NavController, public httpClient: HttpClient, private router: Router, private http: Http) { }
 
   ngOnInit() {
-      this.donnees = this.httpClient.get('http://localhost:80/API_QUIDE/api/categorie/read.php');
+      this.donnees = this.httpClient.get('http://localhost/API_QUIDE/api/categorie/read.php');
       this.donnees.subscribe(data => {
         this.tableauCategories = data;
-          console.log(this.tableauCategories);
       });
   }
-
 }

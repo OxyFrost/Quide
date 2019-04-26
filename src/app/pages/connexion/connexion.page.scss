@@ -19,6 +19,14 @@
     margin: auto;
 }
 
+.form-email {
+    --background: #061221;
+}
+
+.form-mdp {
+    --background: #071526;
+}
+
 .input[type=email], .input[type=password] {
     height: 25px;
 }
@@ -27,8 +35,8 @@
     color: #ffdd21;
     font-size: 14px;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    font-weight: 400;
-    padding-left: 180px;
+    font-weight: 500;
+    padding-left: 185px;
     margin-top: -0.5px;
 
 }
