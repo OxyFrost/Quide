@@ -1,62 +1,51 @@
 <ion-content padding>
-  
-    
+
+    <ion-button class="retour" routerDirection="forward"
+                routerLink="/tabs/home">
+        <ion-icon name="arrow-back"></ion-icon>
+        Retour
+    </ion-button>
+    <br/><br/>
+
     <div class="login-block">
         <ion-radio-group [(ngModel)]="civilite">
-                <ion-label class="civilite"style="margin-left:20px;">Mr.</ion-label>
-                <ion-radio slot="start" value="mr" checked></ion-radio>
-                <ion-label class="civilite" style="margin-left:10px;"> </ion-label>
-                <ion-label class="civilite">Mme.</ion-label>
-                <ion-radio slot="start" value="mme"></ion-radio>
-            </ion-radio-group>
-            
+            <ion-radio checked class="btnRadio" slot="start" value="mr"></ion-radio>
+            <ion-label class="civilite" style="margin-left:20px;">Mr.</ion-label>
+
+            <ion-label class="civilite" style="margin-left:10px;"></ion-label>
+
+            <ion-radio class="btnRadio" slot="start" value="mme"></ion-radio>
+            <ion-label class="civilite" style="margin-left: 20px;">Mme.</ion-label>
+        </ion-radio-group>
 
         <!-- Nom -->
-        <h1>Nom</h1>
-        <ion-item class="form">
-            <ion-input class="champsP" type="nom" [(ngModel)]="nomInput" required="required"></ion-input>
-        </ion-item>
+        <h1 class="title">Nom</h1>
+        <ion-input [(ngModel)]="nomInput" class="champsP" required="required" type="nom"></ion-input>
 
         <!-- Prénom -->
-        <h1>Prénom</h1>
-        <ion-item class="form">
-            <ion-input class="champsP" type="prenom" [(ngModel)]="prenomInput" required="required"></ion-input>
-        </ion-item>
+        <h1 class="title">Prénom</h1>
+        <ion-input [(ngModel)]="prenomInput" class="champsP" required="required" type="prenom"></ion-input>
 
         <!-- Téléphone -->
-        <h1>Téléphone</h1>
-        <ion-item class="form">
-            <ion-input class="champsP" type="tel" [(ngModel)]="telInput" required="required"></ion-input>
-        </ion-item>
+        <h1 class="title">Téléphone</h1>
+        <ion-input [(ngModel)]="telInput" class="champsP" required="required" type="tel"></ion-input>
 
-         <!-- Adresse Email -->
-        <h1>Téléphone</h1>
-        <ion-item class="form">
-            <ion-input class="champsP" type="email" [(ngModel)]="emailInput" required="required"></ion-input>
-        </ion-item>
+        <!-- Adresse Email -->
+        <h1 class="title">Email</h1>
+        <ion-input [(ngModel)]="emailInput" class="champsP" required="required" type="email"></ion-input>
 
-         <!-- Mot de passe-->
-         <h1>Mot de passe</h1>
-         <ion-item class="form">
-             <ion-input class="champsP" type="mdp" [(ngModel)]="mdpInput" required="required"></ion-input>
-         </ion-item>
-           <!-- Confirmer Mot de passe-->
-           <h1>Confirmer Mot de passe</h1>
-           <ion-item class="form">
-               <ion-input class="champsP" type="Cmdp" [(ngModel)]="CmdpInput" required="required"></ion-input>
-           </ion-item>
+        <!-- Mot de passe-->
+        <h1 class="title">Mot de passe</h1>
+        <ion-input [(ngModel)]="mdpInput" class="champsP" required="required" type="mdp"></ion-input>
 
-        <!-- Mot de passe oublié
+        <!-- Confirmer Mot de passe-->
+        <h1 class="title">Confirmer Mot de passe</h1>
+        <ion-input [(ngModel)]="CmdpInput" class="champsP" required="required" type="Cmdp"></ion-input>
 
-        <div>
-            <p class="fgt-password" href="">Mot de passe oublié ?</p>
-        </div>
-        -->
     </div>
-    <!-- Bouton "Se connecter"-->
     <div class="sign-in">
 
-        <ion-button class="se-connecter" (click)="connexion()" fill="clear" mode="ios">C'est parti !</ion-button>
+        <ion-button (click)="inscription()" class="se-connecter" fill="clear" mode="ios">C'est parti !</ion-button>
 
     </div>
 </ion-content>
