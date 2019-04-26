@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InscriptionPage implements OnInit {
 
+    loginInput;
+    mdpInput;
+
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+
+  inscription() {
+
   }
 
 }
