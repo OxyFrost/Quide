@@ -1,138 +1,137 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>liste de lieu</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content padding>
 
-<ion-content padding >
+    <ion-button class="retour" routerDirection="forward"
+                routerLink="/tabs/home">
+        <ion-icon name="arrow-back"></ion-icon>
+        Retour
+    </ion-button>
 
-  <ion-button expand="block" routerLink="/tabs/home" routerDirection="root">
-    accueil (temporaire) {{ myId }}
-  </ion-button>
+    <ion-grid>
+        <ion-row>
+            <ng-container *ngFor="let item of tableauEtablissement | keyvalue">
+                <ion-card
+                          routerDirection="forward"
+                          routerLink="/info-etablissement/{{tableauEtablissement[item.key].idEtab}}">
 
-  <ion-grid>
-  <ion-row>
+                    <ng-container
+                        *ngIf=" myId == 4 && (tableauEtablissement[item.key].sousCatEtab == 1 || tableauEtablissement[item.key].sousCatEtab == 2)">
+                        <img src="assets/img/bar.jpg">
+                        <div class="test">
+                            <ion-icon name="heart-empty"></ion-icon>
+                        </div>
 
-        <ion-card *ngFor="let item of tableauEtablissement | keyvalue" routerLink="/info-etablissement/{{tableauEtablissement[item.key].idEtab}}"  routerDirection="root">
+                        <div class="card-title"> {{ tableauEtablissement[item.key].nomEtab }} </div>
+                        <div class="card-subtitle">{{ tableauEtablissement[item.key].codePostalEtab }}
+                            - {{ tableauEtablissement[item.key].villeEtab }} </div>
+                    </ng-container>
+                </ion-card>
+            </ng-container>
 
-          <ion-card-header *ngIf="myId==4 && (tableauEtablissement[item.key].sousCatEtab == 1  || tableauEtablissement[item.key].sousCatEtab == 2 ) ">
+            <ng-container *ngFor="let item of tableauLieuInsolite | keyvalue">
+                <ion-card
+                          routerDirection="forward"
+                          routerLink="/info-lieu/{{tableauLieuInsolite[item.key].idLieu}}">
 
+                    <ng-container *ngIf=" myId == 2">
 
-            <ion-card-title>  {{ tableauEtablissement[item.key].nomEtab }} </ion-card-title>
-
-          </ion-card-header>
-        </ion-card>
-
-        <ion-card *ngFor="let item of tableauLieuInsolite | keyvalue" routerLink="/info-lieu/{{tableauLieuInsolite[item.key].idLieu}}"  routerDirection="root">
-
-          <ion-card-header *ngIf="myId == 2 ">
-
-
-            <ion-card-title>  {{ tableauLieuInsolite[item.key].nomLieu }} </ion-card-title>
-
-          </ion-card-header>
-        </ion-card>
-
-        <ion-card *ngFor="let item of tableauEtablissement | keyvalue" routerLink="/info-etablissement/{{tableauEtablissement[item.key].idEtab}}"  routerDirection="root">
-
-          <ion-card-header *ngIf="myId==4 && (tableauEtablissement[item.key].sousCatEtab == 1  || tableauEtablissement[item.key].sousCatEtab == 2 ) ">
-
-
-            <ion-card-title>  {{ tableauEtablissement[item.key].nomEtab }} </ion-card-title>
-
-          </ion-card-header>
-        </ion-card>
-
-  </ion-row>
-
-  </ion-grid>
-</ion-content>
-    <ion-title>liste-lieux</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content class="card-background-page">
-  <ion-button class="se-connecter" (click)="listeLieu()" fill="clear" mode="ios">Se connecter</ion-button>
-
-  <ion-button expand="block" class="se-connecter" [routerLink]="['/info-lieu/', '1']" routerDirection="root"> Toast 1 </ion-button>
-  <ion-button expand="block" [routerLink]="['/info-lieu/', '2']" routerDirection="root"> Toast 2 </ion-button>
-  <ion-button expand="block" [routerLink]="['/info-lieu/', '3']" routerDirection="root"> Toast 3 </ion-button>
-
-  <!-- <div class="filtre">
-      <img src="assets/img/filter.svg"></div>
-   -->
-  <ion-card>
-    <img src="assets/img/italien.jpg">
-    <div class="test">
-      <ion-icon name="heart-empty"></ion-icon></div>
-    <div class="card-title">São Paulo</div>
-    <div class="card-subtitle">41 Listings</div>
+                        <img src="assets/img/bar.jpg">
+                        <div class="test">
+                            <ion-icon name="heart-empty"></ion-icon>
+                        </div>
 
 
+                        <div class="card-title">  {{ tableauLieuInsolite[item.key].nomLieu }} </div>
+                        <div class="card-subtitle">{{ tableauLieuInsolite[item.key].codePostalLieu }}
+                            - {{ tableauLieuInsolite[item.key].villeLieu }} </div>
+                    </ng-container>
+                </ion-card>
+            </ng-container>
 
-  </ion-card>
+        </ion-row>
+        <!--
+            </ion-grid>
 
-  <ion-card>
-    <img src="assets/img/resto.jpg">
-    <div class="test">
-      <ion-icon name="heart-empty"></ion-icon></div>
-    <div class="card-title">Amsterdam</div>
-    <div class="card-subtitle">64 Listings</div>
+             <div class="filtre">
+                <img src="assets/img/filter.svg"></div>
 
-  </ion-card>
+            <ion-card>
+                <img src="assets/img/italien.jpg">
+                <div class="test">
+                    <ion-icon name="heart-empty"></ion-icon>
+                </div>
+                <div class="card-title">São Paulo</div>
+                <div class="card-subtitle">41 Listings</div>
 
-  <ion-card>
-    <img src="assets/img/neonbar.jpg">
-    <div class="test">
-      <ion-icon name="heart-empty"></ion-icon></div>
-    <div class="card-title">San </div>
-    <div class="card-subtitle">72 Listings</div>
 
-  </ion-card>
+            </ion-card>
 
-  <ion-card>
-    <img src="assets/img/italien.jpg">
-    <div class="test">
-      <ion-icon name="heart-empty"></ion-icon></div>
-    <div class="card-title">Madison</div>
-    <div class="card-subtitle">28 Listings</div>
+            <ion-card>
+                <img src="assets/img/resto.jpg">
+                <div class="test">
+                    <ion-icon name="heart-empty"></ion-icon>
+                </div>
+                <div class="card-title">Amsterdam</div>
+                <div class="card-subtitle">64 Listings</div>
 
-  </ion-card>
+            </ion-card>
 
-  <ion-card>
-    <img src="assets/img/bar.jpg">
-    <div class="test">
-      <ion-icon name="heart-empty"></ion-icon></div>
-    <div class="card-title">São Paulo</div>
-    <div class="card-subtitle">41 Listings</div>
+            <ion-card>
+                <img src="assets/img/neonbar.jpg">
+                <div class="test">
+                    <ion-icon name="heart-empty"></ion-icon>
+                </div>
+                <div class="card-title">San</div>
+                <div class="card-subtitle">72 Listings</div>
 
-  </ion-card>
+            </ion-card>
 
-  <ion-card>
-    <img src="assets/img/resto.jpg">
-    <div class="test">
-      <ion-icon name="heart-empty"></ion-icon></div>
-    <div class="card-title">Amsterdam</div>
-    <div class="card-subtitle">64 Listings</div>
+            <ion-card>
+                <img src="assets/img/italien.jpg">
+                <div class="test">
+                    <ion-icon name="heart-empty"></ion-icon>
+                </div>
+                <div class="card-title">Madison</div>
+                <div class="card-subtitle">28 Listings</div>
 
-  </ion-card>
+            </ion-card>
 
-  <ion-card>
-    <img src="assets/img/bar.jpg">
-    <div class="test">
-      <ion-icon name="heart-empty"></ion-icon></div>
-    <div class="card-title">San F</div>
-    <div class="card-subtitle">72 Listings</div>
+            <ion-card>
+                <img src="assets/img/bar.jpg">
+                <div class="test">
+                    <ion-icon name="heart-empty"></ion-icon>
+                </div>
+                <div class="card-title">São Paulo</div>
+                <div class="card-subtitle">41 Listings</div>
 
-  </ion-card>
+            </ion-card>
 
-  <ion-card>
-    <img src="assets/img/italien.jpg">
-    <div class="test">
-      <ion-icon name="heart-empty"></ion-icon></div>
-    <div class="card-title">Madison</div>
-    <div class="card-subtitle">28 Listings</div>
+            <ion-card>
+                <img src="assets/img/resto.jpg">
+                <div class="test">
+                    <ion-icon name="heart-empty"></ion-icon>
+                </div>
+                <div class="card-title">Amsterdam</div>
+                <div class="card-subtitle">64 Listings</div>
 
-  </ion-card>
+            </ion-card>
 
-</ion-content>
+            <ion-card>
+                <img src="assets/img/bar.jpg">
+                <div class="test">
+                    <ion-icon name="heart-empty"></ion-icon>
+                </div>
+                <div class="card-title">San F</div>
+                <div class="card-subtitle">72 Listings</div>
+
+            </ion-card>
+
+            <ion-card>
+                <img src="assets/img/italien.jpg">
+                <div class="test">
+                    <ion-icon name="heart-empty"></ion-icon>
+                </div>
+                <div class="card-title">Madison</div>
+                <div class="card-subtitle">28 Listings</div>
+
+            </ion-card>
+        -->

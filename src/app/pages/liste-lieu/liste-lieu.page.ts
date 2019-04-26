@@ -18,7 +18,6 @@ export class ListeLieuPage implements OnInit {
   donneesLieu;
 
   myId = null;
-  donnees: Observable<any>;
   tableauEtablissement;
   tableauLieuInsolite;
 
