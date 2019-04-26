@@ -11,11 +11,11 @@
 @import '~@ionic/angular/css/flex-utils.css';
 
 
-ion-app, ion-header, ion-content, .form{
+ion-app, ion-header, ion-content {
     --background: linear-gradient(#030D17, #051B31);
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-
 }
+
 ion-tab-bar, ion-tab-button{
     --background: #051B31;
     color: #ffffff96;
