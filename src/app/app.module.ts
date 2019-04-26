@@ -16,12 +16,11 @@ import {InfoLieuPageModule} from './pages/info-lieu/info-lieu.module';
 import {InscriptionPageModule} from './pages/inscription/inscription.module';
 import {ConnexionPageModule} from './pages/connexion/connexion.module';
 
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  
-    imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, HttpModule, ListeLieuPageModule, InfoLieuPageModule, InscriptionPageModule, ConnexionPageModule],
-
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, HttpModule, ListeLieuPageModule, InfoLieuPageModule, InscriptionPageModule, ConnexionPageModule],
   providers: [
     StatusBar,
     SplashScreen,
