@@ -7,55 +7,51 @@
         <h1 class="label">Un lieu insolite à faire découvrir ?</h1>
     </div>
 
+    <ion-button class="add-btn" fill="clear">
+        <ion-icon class="add-icon" src="assets/icon/plus.svg"></ion-icon>
+    </ion-button>
+
+    <ion-img class="add-img" src="assets/img/no_thumbnail.jpg"></ion-img>
+
     <div class="form">
         <h1>Nom</h1>
-            <ion-item class="form-name">
                 <ion-input class="nom" type="text" required="required"></ion-input>
-            </ion-item>
 
         <h1>Catégorie</h1>
-            <ion-item class="form-category">
-                <ion-select class="select-category" placeholder="Choisissez une catégorie">
+                <ion-select class="form-category" placeholder="Choisissez une catégorie">
                     <ion-select-option value="restaurant">Restaurant</ion-select-option>
                     <ion-select-option value="bar">Bar</ion-select-option>
                     <ion-select-option value="pub">Pub</ion-select-option>
                     <ion-select-option value="cinema">Cinéma</ion-select-option>
                     <ion-select-option value="place">Place</ion-select-option>
                 </ion-select>
-            </ion-item>
 
         <h1>Adresse</h1>
-            <ion-item class="form-address">
                 <ion-input class="address" type="text"></ion-input>
-            </ion-item>
 
         <ion-row>
-            <h1>Code Postal</h1>
-                <ion-item class="form-zipcode">
-                    <ion-input class="zip-code" type="number" required="required"></ion-input>
-                </ion-item>
+            <ion-col size="5">
+                <h1>Code Postal</h1>
+                        <ion-input class="zip-code" type="number" required="required"></ion-input>
+            </ion-col>
 
+            <ion-col size="1"></ion-col>
 
+        <ion-col size="6">
             <h1>Ville</h1>
-                <ion-item class="form-city">
-                    <ion-input class="city" type="text" required="required"></ion-input>
-                </ion-item>
+                <ion-input class="city" type="text" required="required"></ion-input>
+        </ion-col>
+
         </ion-row>
 
         <h1>Pays</h1>
-            <ion-item class="form-country">
-                <ion-input class="country" type="text" required="required"></ion-input>
-            </ion-item>
+            <ion-input class="country" type="text" required="required"></ion-input>
 
         <h1>Téléphone</h1>
-            <ion-item class="form-tel">
-                <ion-input class="tel" type="text"></ion-input>
-            </ion-item>
+            <ion-input class="tel" type="text"></ion-input>
 
         <h1>Description</h1>
-            <ion-item class="form-desc">
-                <ion-input class="desc" type="text" required="required"></ion-input>
-            </ion-item>
+            <ion-input class="desc" type="text" required="required"></ion-input>
     </div>
 
     <div class="boutons">

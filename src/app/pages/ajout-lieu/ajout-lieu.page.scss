@@ -1,21 +1,18 @@
-.nom, .address, .zip-code, .city, .country, .tel {
+.nom, .address, .zip-code, .city, .country, .tel, .form-category {
     border: none;
     border: solid 1px #D5D5D5;
     border-radius: 8px;
     background-color: #fff;
 }
 
-.form {
-    width: 90%;
+.boutons {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.form, {
+    width: 85%;
     margin: auto;
-
-}
-
-.form-category {
-    border: none;
-    border: solid 1px #D5D5D5;
-    border-radius: 8px;
-    background-color: #fff;
 }
 
 .desc {
@@ -24,42 +21,15 @@
     border-radius: 8px;
     background-color: #fff;
     --padding-bottom: 30px;
-}
-
-.form-name {
-    --background: rgb(5,15,20);
-}
-
-.form-address {
-    --background: rgb(5,20,36);
-}
-
-.form-zipcode {
-    --background: rgb(6,18,31);
-}
-
-.form-city {
-    --background: rgb(7,20,36);
-}
-
-.form-country {
-    --background: rgb(7,22,40);
-}
-
-.form-tel, .form-desc {
-    --background: rgb(8,24,44);
-}
-
-.form-email {
-    --background: #061221;
-}
-
-.form-mdp {
-    --background: #071526;
+    margin-bottom: 20px;
 }
 
 .input[type=email], .input[type=password] {
     height: 25px;
+}
+
+.ion-select {
+    width: 80%;
 }
 
 .annuler {
@@ -68,8 +38,8 @@
     border: solid 1px #ffdd21;
     border-radius: 8px;
     width: 130px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 5px;
+    margin-right: 20px;
     color: #ffdd21;
 }
 
@@ -77,16 +47,38 @@
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     border: none;
     border-radius: 8px;
-    width: 200px;
+    width: 170px;
     --background: #ffdd21;
     --color: #030D17;
 }
 
 h1 {
-    padding-left: 35px;
+    padding-left: 20px;
 }
 
 .label {
     padding-left: 70px;
     font-weight: 400;
+}
+
+.add-img {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    position: relative;
+}
+
+.add-btn {
+    position: absolute;
+    position: absolute;
+    top: 53px;
+    right: 71px;
+    z-index: 1;
+}
+
+.add-icon {
+    width: 25px;
+    height: 25px;
 }
