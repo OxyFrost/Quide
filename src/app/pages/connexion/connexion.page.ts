@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {HttpClientModule, HttpClient} from '@angular/common/http';
+import {HttpClientModule, HttpClient, HttpParams} from '@angular/common/http';
 import {BrowserModule} from '@angular/platform-browser';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {NavController, NavParams} from '@ionic/angular';
@@ -16,18 +16,27 @@ export class ConnexionPage implements OnInit {
 
     donnees: Observable<any>;
     emailInput;
-    emailAPI;
     mdpInput;
-    mdpAPI;
+    dataUser;
 
     constructor(public navCtrl: NavController, public httpClient: HttpClient, private router: Router, private http: Http) {
     }
 
 
     connexion() {
-        this.donnees = this.httpClient.get('http://localhost:80/API_QUIDE/api/utilisateur/read.php');
+
+        // Initialize Params Object
+        let params = new HttpParams();
+
+        // Begin assigning parameters
+        params = params.append('login', this.emailInput);
+        params = params.append('pwd', this.mdpInput);
+
+
+        this.donnees = this.httpClient.get('http://localhost:80/API_QUIDE/api/utilisateur/connexion.php', { params: params });
         this.donnees.subscribe(data => {
-            console.log('my data: ', data); //Affiche dans la consonle le deuxieme tableau renvoyé par l'API
+            this.dataUser = data;
+            console.log(data);
         });
     }
 
