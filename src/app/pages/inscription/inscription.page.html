@@ -42,11 +42,11 @@
 
         <!-- Mot de passe-->
         <h1 class="title">Mot de passe</h1>
-        <ion-input [(ngModel)]="mdpInput" class="champsP" required="required" type="mdp"></ion-input>
+        <ion-input [(ngModel)]="mdpInput" class="champsP" required="required" type="password"></ion-input>
 
         <!-- Confirmer Mot de passe-->
         <h1 class="title">Confirmer Mot de passe</h1>
-        <ion-input [(ngModel)]="CmdpInput" class="champsP" required="required" type="Cmdp"></ion-input>
+        <ion-input [(ngModel)]="CmdpInput" class="champsP" required="required" type="password"></ion-input>
 
         <div *ngIf="msg" class="ion-text-center">
             <h1>{{ msg }}</h1>
