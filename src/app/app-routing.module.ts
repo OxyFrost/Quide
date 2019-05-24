@@ -13,7 +13,8 @@ const routes: Routes = [
   { path: 'inscription', loadChildren: './pages/inscription/inscription.module#InscriptionPageModule' },
   { path: 'info-lieu/:myid', loadChildren: './pages/info-lieu/info-lieu.module#InfoLieuPageModule' },
   { path: 'liste-lieu/:myid', loadChildren: './pages/liste-lieu/liste-lieu.module#ListeLieuPageModule' },
-  { path: 'info-etablissement/:myid', loadChildren: './pages/info-etablissement/info-etablissement.module#InfoEtablissementPageModule' }
+  { path: 'info-etablissement/:myid', loadChildren: './pages/info-etablissement/info-etablissement.module#InfoEtablissementPageModule' },
+  { path: 'parametres', loadChildren: './pages/parametres/parametres.module#ParametresPageModule' }
 
 ];
 @NgModule({
