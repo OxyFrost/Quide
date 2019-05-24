@@ -17,11 +17,12 @@ export class InscriptionPage implements OnInit {
     donnees: Observable<any>;
     emailInput;
     mdpInput;
-    civilite = 'mr';
+    civilite = 'Mr';
     nomInput;
     prenomInput;
+    dateInput;
     telInput;
-
+    msg;
     CmdpInput;
 
 
@@ -31,21 +32,36 @@ export class InscriptionPage implements OnInit {
   ngOnInit() {
   }
 
+    inscription() {
+      // tslint:disable-next-line:max-line-length
+      if (this.emailInput && this.mdpInput && this.civilite && this.nomInput && this.prenomInput && this.dateInput && this.telInput && this.CmdpInput) {
+          if (this.mdpInput === this.CmdpInput) {
+              // Initialize Params Object
+              let params = new HttpParams();
 
-  inscription() {
+              // Begin assigning parameters
+              params = params.append('email', this.emailInput);
+              params = params.append('pwd', this.mdpInput);
+              params = params.append('civilite', this.civilite);
+              params = params.append('nom', this.nomInput);
+              params = params.append('prenom', this.prenomInput);
+              params = params.append('tel', this.telInput);
+              params = params.append('date', this.dateInput);
 
-      // Initialize Params Object
-      let params = new HttpParams();
-
-      // Begin assigning parameters
-      params = params.append('login', this.emailInput);
-      params = params.append('pwd', this.mdpInput);
-      params = params.append('civilite', this.civilite);
-      params = params.append('nom', this.nomInput);
-      params = params.append('prenom', this.prenomInput);
-      params = params.append('tel', this.telInput);
-
-      this.donnees = this.httpClient.put('http://localhost:80/API_QUIDE/api/utilisateur/inscription.php', { params: params });
+              this.donnees = this.httpClient.get('http://localhost:80/API_QUIDE/api/utilisateur/inscription.php', {params: params});
+              this.donnees.subscribe();
+              this.msg = 'Inscription réussi !';
+              if (this.msg === 'Inscription réussi !') {
+                  setTimeout(() => {
+                      this.router.navigate(['tabs/connexion']);
+                  }, 3000);
+              }
+          } else {
+              this.msg = 'Erreur Mot de passe';
+          }
+      } else {
+          this.msg = 'Champs manquant';
+      }
   }
 
 }

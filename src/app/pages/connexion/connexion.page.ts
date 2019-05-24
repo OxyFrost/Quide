@@ -18,6 +18,7 @@ export class ConnexionPage implements OnInit {
     emailInput;
     mdpInput;
     dataUser;
+    msg;
 
     constructor(public navCtrl: NavController, public httpClient: HttpClient, private router: Router, private http: Http) {
     }
@@ -33,7 +34,7 @@ export class ConnexionPage implements OnInit {
         params = params.append('pwd', this.mdpInput);
 
 
-        this.donnees = this.httpClient.get('http://localhost:8888/API_QUIDE/api/utilisateur/connexion.php', { params: params });
+        this.donnees = this.httpClient.get('http://localhost:80/API_QUIDE/api/utilisateur/connexion.php', { params: params });
         this.donnees.subscribe(data => {
             this.dataUser = data;
             console.log(data);
