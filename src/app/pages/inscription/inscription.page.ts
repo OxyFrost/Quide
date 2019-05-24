@@ -33,6 +33,7 @@ export class InscriptionPage implements OnInit {
 
 
   inscription() {
+
       // Initialize Params Object
       let params = new HttpParams();
 
