@@ -29,7 +29,7 @@ export class InfoEtablissementPage implements OnInit {
       params = params.append('id', this.myId);
 
 
-      this.donnees = this.httpClient.get('http://localhost:80/API_QUIDE/api/etablissement/read.php',{ params: params });
+      this.donnees = this.httpClient.get('http://localhost:8888/API_QUIDE/api/etablissement/read.php',{ params: params });
       this.donnees.subscribe(data => {
         this.infoEtablissement = data;
         console.log(data);
