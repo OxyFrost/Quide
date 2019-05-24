@@ -19,7 +19,10 @@ export class ConnexionPage implements OnInit {
     mdpInput;
     dataUser;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1128144ac0adef6830c04fb6c14ad13fa62f8753
     constructor(public navCtrl: NavController, public httpClient: HttpClient, private router: Router, private http: Http) {
     }
 
