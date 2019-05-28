@@ -25,23 +25,21 @@
  -->
  
 
- <div style="border:1px solid pink;" *ngFor="let item of tableauCategories | keyvalue" size="6" routerDirection="root"
- routerLink="/liste-lieu/{{ item.key }}" class="id1">
- <ion-card>
-    <img src="assets/img/categorie/{{tableauCategories[item.key].idCat}}.jpg" class="imageCategorie2">
-    <div class="card-title">{{ tableauCategories[item.key].nomCat }}</div>
-    <div class="card-subtitle">{{ tableauCategories[item.key].nomCat }}</div> 
-  </ion-card>
-
-<div class="corbeille1">
-    <ion-icon name="ios-trash"></ion-icon>
-  </div>
-
-
-
-<div class="write1">
-<ion-icon name="ios-create"></ion-icon></div>
-
+ <div style="border:1px solid pink;" *ngFor="let item of tableauCategories | keyvalue" size="" routerDirection="root"
+ routerLink="/liste-lieu/{{ item.key }}"  >
+    <div style="padding-top: 0px;" class="id1" style="border:1px solid purple;">
+    <ion-card>
+        <img src="assets/img/categorie/{{tableauCategories[item.key].idCat}}.jpg" class="imageCategorie2" style="border:1px solid yellow;">
+        <div class="card-title">{{ tableauCategories[item.key].nomCat }}</div>
+        <div class="card-subtitle">{{ tableauCategories[item.key].nomCat }}</div> 
+      </ion-card>
+    </div>
+    <div class="corbeille1">
+        <ion-icon name="ios-trash"></ion-icon>
+      </div>
+    <div class="write1">
+    <ion-icon name="ios-create"></ion-icon></div>
+    
 </div>
 
 

@@ -1,21 +1,27 @@
 <ion-content padding>
     <ion-button class="retour" routerDirection="forward"
-                routerLink="/tabs/home">
+                routerLink="/tabs/connexion">
         <ion-icon name="arrow-back"></ion-icon>
         Retour
     </ion-button>
+<<<<<<< HEAD
+=======
+
+    <br/><br/>
+>>>>>>> 83bc02fb0fec2dbcce0f26bbbc125d11a71b5794
 
     <br/><br/>
 
     <div class="login-block">
+
         <ion-radio-group [(ngModel)]="civilite">
-            <ion-radio checked class="btnRadio" slot="start" value="mr"></ion-radio>
-            <ion-label class="civilite" style="margin-left:20px;">Mr.</ion-label>
+            <ion-radio checked class="btnRadio" slot="start" value="Mr"></ion-radio>
+            <ion-label class="civilite" value="Mr" style="margin-left:20px;">Mr.</ion-label>
 
             <ion-label class="civilite" style="margin-left:10px;"></ion-label>
 
-            <ion-radio class="btnRadio" slot="start" value="mme"></ion-radio>
-            <ion-label class="civilite" style="margin-left: 20px;">Mme.</ion-label>
+            <ion-radio class="btnRadio" slot="start" value="Mme"></ion-radio>
+            <ion-label class="civilite" value="Mme" style="margin-left: 20px;">Mme.</ion-label>
         </ion-radio-group>
 
         <!-- Nom -->
@@ -34,18 +40,23 @@
         <h1 class="title">Email</h1>
         <ion-input [(ngModel)]="emailInput" class="champsP" required="required" type="email"></ion-input>
 
+        <!-- Date de Naissance -->
+        <h1 class="title">Date de Naissance</h1>
+        <ion-input [(ngModel)]="dateInput" class="champsP" required="required" type="date"></ion-input>
+
         <!-- Mot de passe-->
         <h1 class="title">Mot de passe</h1>
-        <ion-input [(ngModel)]="mdpInput" class="champsP" required="required" type="mdp"></ion-input>
+        <ion-input [(ngModel)]="mdpInput" class="champsP" required="required" type="password"></ion-input>
 
         <!-- Confirmer Mot de passe-->
         <h1 class="title">Confirmer Mot de passe</h1>
-        <ion-input [(ngModel)]="CmdpInput" class="champsP" required="required" type="Cmdp"></ion-input>
+        <ion-input [(ngModel)]="CmdpInput" class="champsP" required="required" type="password"></ion-input>
 
+        <div *ngIf="msg" class="ion-text-center">
+            <h1>{{ msg }}</h1>
+        </div>
     </div>
     <div class="sign-in">
-
         <ion-button (click)="inscription()" class="se-connecter" fill="clear" mode="ios">C'est parti !</ion-button>
-
     </div>
 </ion-content>
