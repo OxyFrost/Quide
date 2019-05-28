@@ -24,27 +24,22 @@
     <img src="assets/img/filter.svg"></div>
  -->
  
+ 
+<ion-grid padding>
+    <ion-row *ngFor="let item of tableauCategories | keyvalue" size="" routerDirection="root"
+    routerLink="/liste-lieu/{{ item.key }}">
+        <ion-col >
+            <div >
+                <ion-img class="imageCategorie2"
+                         src="assets/img/categorie/{{tableauCategories[item.key].idCat}}.jpg"></ion-img>
+                <h2 class="titreCategorie">{{ tableauCategories[item.key].nomCat }}</h2>
+                <ion-icon name="ios-trash" class="corbeille1"></ion-icon>
+                <ion-icon name="ios-create" class="write1"></ion-icon>
+            </div>
+        </ion-col>
+    </ion-row>
 
- <div style="border:1px solid pink;" *ngFor="let item of tableauCategories | keyvalue" size="6" routerDirection="root"
- routerLink="/liste-lieu/{{ item.key }}" class="id1">
- <ion-card>
-    <img src="assets/img/categorie/{{tableauCategories[item.key].idCat}}.jpg" class="imageCategorie2">
-    <div class="card-title">{{ tableauCategories[item.key].nomCat }}</div>
-    <div class="card-subtitle">{{ tableauCategories[item.key].nomCat }}</div> 
-  </ion-card>
-
-<div class="corbeille1">
-    <ion-icon name="ios-trash"></ion-icon>
-  </div>
-
-
-
-<div class="write1">
-<ion-icon name="ios-create"></ion-icon></div>
-
-</div>
-
-
+</ion-grid>
 
 
   

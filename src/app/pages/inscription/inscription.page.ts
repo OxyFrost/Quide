@@ -47,7 +47,8 @@ export class InscriptionPage implements OnInit {
               params = params.append('tel', this.telInput);
               params = params.append('date', this.dateInput);
 
-              this.donnees = this.httpClient.put('http://localhost:80/API_QUIDE/api/utilisateur/inscription.php', {params: params});
+
+              this.donnees = this.httpClient.put('http://localhost:8888/API_QUIDE/api/utilisateur/inscription.php', {params: params});
               this.donnees.subscribe();
               this.msg = 'Inscription réussi !';
               if (this.msg === 'Inscription réussi !') {
@@ -61,6 +62,7 @@ export class InscriptionPage implements OnInit {
       } else {
           this.msg = 'Champs manquant';
       }
+
   }
 
 }
