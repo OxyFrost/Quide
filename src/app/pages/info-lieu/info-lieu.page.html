@@ -1,5 +1,9 @@
 
 <ion-content>
+    <ng-container *ngFor="let item of infoLieu | keyvalue">
+    <div class="img-block">
+        <ion-img class="fiche-img" src="assets/img/bar.jpg"></ion-img>
+    </div>
 
     <ion-button class="retour" routerDirection="forward"
     routerLink="/tabs/home">
@@ -29,7 +33,6 @@
     <div class="img-block">
         <ion-img class="fiche-img" src="assets/img/bar.jpg"></ion-img>
     </div>
-
     <div class="content-block">
         <ion-grid>
             <ion-row>
