@@ -45,7 +45,8 @@ export class InscriptionPage implements OnInit {
       params = params.append('prenom', this.prenomInput);
       params = params.append('tel', this.telInput);
 
-      this.donnees = this.httpClient.put('http://localhost:80/API_QUIDE/api/utilisateur/inscription.php', { params: params });
+      this.donnees = this.httpClient.put('http://localhost:8888/API_QUIDE/api/utilisateur/inscription.php', { params: params });
+
   }
 
 }

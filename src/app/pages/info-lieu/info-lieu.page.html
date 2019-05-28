@@ -1,5 +1,16 @@
 
 <ion-content>
+
+    <ion-button class="retour" routerDirection="forward"
+    routerLink="/tabs/home">
+        <ion-icon name="arrow-back"></ion-icon>
+       
+    </ion-button>
+
+    
+
+
+
     <ng-container *ngFor="let item of infoLieu | keyvalue">
     <div class="img-block">
         <ion-img class="fiche-img" src="assets/img/bar.jpg"></ion-img>
