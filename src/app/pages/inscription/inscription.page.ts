@@ -38,7 +38,6 @@ export class InscriptionPage implements OnInit {
           if (this.mdpInput === this.CmdpInput) {
               // Initialize Params Object
               let params = new HttpParams();
-
               // Begin assigning parameters
               params = params.append('email', this.emailInput);
               params = params.append('pwd', this.mdpInput);

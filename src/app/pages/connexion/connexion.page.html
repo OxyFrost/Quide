@@ -1,3 +1,42 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content padding>
+
+    <ion-img class="logo" src="assets/img/logo.png" alt="logo quide"></ion-img>
+
+<div class="login-block">
+    <!-- Adresse e-mail -->
+    <h1>Adresse e-mail</h1>
+        <ion-item class="form-email">
+            <ion-input class="email" type="email" [(ngModel)]="email" required="required"></ion-input>
+          </ion-item>
+
+    <!-- Mot de passe -->
+    <h1>Mot de passe</h1>
+          <ion-item class="form-mdp">
+              <ion-input class="password" type="password" [(ngModel)]="password" required="required"></ion-input>
+            </ion-item>
+
+    <!-- Mot de passe oublié-->
+    <!--
+    <div>
+        <p class="fgt-password" href="">Mot de passe oublié ?</p>
+    </div> -->
+</div>
+
+    <!-- Bouton "Se connecter"-->
+    <div class="sign-in">
+        <ion-button class="se-connecter" fill="clear" mode="ios" href="">Se connecter</ion-button>
+    </div>
+
+    <!-- S'inscrire-->
+    <div>
+        <p class="sign-up">Vous n'avez pas encore de compte ?</p>
+        <ion-button class="inscription" fill="solid" mode="ios" href="">S'inscrire</ion-button>
+    </div>
+=======
 <ion-content padding>
     <ion-img class="logo" src="assets/img/logo.png" alt="logo quide"></ion-img>
     <div *ngIf="msg" class="ion-text-center">

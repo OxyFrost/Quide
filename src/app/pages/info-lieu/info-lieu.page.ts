@@ -29,7 +29,6 @@ export class InfoLieuPage implements OnInit {
     // Begin assigning parameters
     params = params.append('id', this.myId);
 
-
     this.donnees = this.httpClient.get('http://localhost:80/API_QUIDE/api/lieuinsolite/read.php', { params: params });
     this.donnees.subscribe(data => {
       this.infoLieu = data;

@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: 'favoris', loadChildren: './pages/favoris/favoris.module#FavorisPageModule' },
   { path: 'profil', loadChildren: './pages/profil/profil.module#ProfilPageModule' },
   { path: 'connexion', loadChildren: './pages/connexion/connexion.module#ConnexionPageModule' },
-  { path: 'fiche', loadChildren: './pages/fiche/fiche.module#FichePageModule' },
+  { path: 'fiche', loadChildren: './pages/fiche/fiche.module#FichePageModule' }
   { path: 'categorie/:myid', loadChildren: './pages/categorie/categorie.module#CategoriePageModule' },
   { path: 'inscription', loadChildren: './pages/inscription/inscription.module#InscriptionPageModule' },
   { path: 'info-lieu/:myid', loadChildren: './pages/info-lieu/info-lieu.module#InfoLieuPageModule' },
