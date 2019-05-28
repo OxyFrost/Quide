@@ -28,10 +28,11 @@
     
     }
     .imageCategorie2{
-      max-width: 50%;
-        height: 50%;
+     
+      
+        height: 150px;
+        width: 100%; 
         object-fit: cover;
-        opacity: 0.7;
     }
     
 
@@ -74,52 +75,14 @@
   .corbeille1{
   
      position: absolute;
-      top: 20%;
+      top: 25%;
       font-size: 2.0em;
       width: 100%;
       font-weight: bold;
       color: #fff;
       text-align: right;
-       margin-left: -40px;
+       margin-left: 100px;
   
-  }
-  
-  .corbeille2{
-  
-     position: absolute;
-      top: 45%;
-      font-size: 2.0em;
-      width: 100%;
-      font-weight: bold;
-      color: #fff;
-      text-align: right;
-       margin-left: -40px;
-  
-  }
-  
-  .corbeille3{
-  
-    position: absolute;
-      top: 70%;
-      font-size: 2.0em;
-      width: 100%;
-      font-weight: bold;
-      color: #fff;
-     text-align: right;
-     margin-left: -40px;
-  
-  }
-  
-  .corbeille4{
-  
-     position: absolute;
-      top: 95%;
-      font-size: 2.0em;
-      width: 100%;
-      font-weight: bold;
-      color: #fff;
-      text-align: right;
-        margin-left: -40px;
   }
   
   
@@ -128,54 +91,16 @@
   .write1{
   
      position: absolute;
-      top: 20%;
+      top: 25%;
       font-size: 2.0em;
       width: 100%;
       font-weight: bold;
       color: #fff;
       text-align: right;
-       margin-left: -70px;
+       margin-left: 140px;
   
   }
-  
-  .write2{
-  
-     position: absolute;
-      top: 45%;
-      font-size: 2.0em;
-      width: 100%;
-      font-weight: bold;
-      color: #fff;
-      text-align: right;
-       margin-left: -70px;
-  
-  }
-  
-  .write3{
-  
-    position: absolute;
-      top: 70%;
-      font-size: 2.0em;
-      width: 100%;
-      font-weight: bold;
-      color: #fff;
-     text-align: right;
-     margin-left: -70px;
-  
-  }
-  
-  .write4{
-  
-     position: absolute;
-      top: 95%;
-      font-size: 2.0em;
-      width: 100%;
-      font-weight: bold;
-      color: #fff;
-      text-align: right;
-        margin-left: -70px;
-  }
-  
+
   .reglages{
   
     position: relative;
@@ -220,18 +145,32 @@
   }
 }
 .imageCategorie2{
-  max-width: 100%;
-    height: 100%;
+  max-width: 200px;
+    height: 150px;
     object-fit: cover;
     opacity: 0.7;
+  
 }
 
 .id1{
-  width: 100%;
-  height: 120px;
-  -moz-border-radius: 1em;
-  border-radius: 1em;
+  max-width: 200px;
+  height: 150px;
+  -moz-border-radius: 8em;
+  border-radius: 8em;
 
+}
+
+.titreCategorie {
+  position: absolute; /* on positionne le conteneur */
+  margin-left: 0px;
+  text-align:left;
+  width: 55%;
+  vertical-align: middle;
+  top: 63%;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif; 
+  font-size: 16px;
+  color:#FFFFFF;
+ 
 }
   
   
