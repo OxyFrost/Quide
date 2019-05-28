@@ -15,7 +15,8 @@ const routes: Routes = [
   { path: 'info-lieu/:myid', loadChildren: './pages/info-lieu/info-lieu.module#InfoLieuPageModule' },
   { path: 'liste-lieu/:myid', loadChildren: './pages/liste-lieu/liste-lieu.module#ListeLieuPageModule' },
   { path: 'info-etablissement/:myid', loadChildren: './pages/info-etablissement/info-etablissement.module#InfoEtablissementPageModule' },
-  { path: 'parametres', loadChildren: './pages/parametres/parametres.module#ParametresPageModule' }
+  { path: 'parametres', loadChildren: './pages/parametres/parametres.module#ParametresPageModule' },
+  { path: 'aide', loadChildren: './pages/aide/aide.module#AidePageModule' }
 
 ];
 @NgModule({
