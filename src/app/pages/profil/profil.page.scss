@@ -1,14 +1,243 @@
-.md-grid-offset [class*="mbsc-col"] {
-    padding-top: .5em;
-    padding-bottom: .5em;
-    background: #cfe0f3;
-    background-clip: padding-box;
-    border: 1px solid transparent;
-    color: #454b50;
+
+.card-background-page {
+
+    ion-card {
+      position: relative;
+      display: block;
+      text-align: center;
+      width: 40%;
+      margin-top: 30px;
+    }
+  
+    .card-title {
+      position: absolute;
+      top: 50%;
+      font-size: 2.0em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+      text-align: left;
+    }
+  
+
+    .id1{
+      width: 100%;
+      height: 120px;
+      -moz-border-radius: 1em;
+      border-radius: 1em;
+    
+    }
+    .imageCategorie2{
+      max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.7;
+    }
+    
+
+
+
+
+
+    .card-subtitle {
+      font-size: 1.0em;
+      position: absolute;
+      top:80%;
+      width: 100%;
+      color: #fff;
+      text-align: left;
+      
+    }
+  .test{
+  
+    position: absolute;
+      top: 0%;
+      font-size: 2.0em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+      text-align: right;
+  }
+  
+  .filtre{
+  
+    position: absolute;
+      
+  }
+    ion-text{
+   text-align: center;
+   color: #fff;
+  
+  
+    }
+  
+  .corbeille1{
+  
+     position: absolute;
+      top: 20%;
+      font-size: 2.0em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+      text-align: right;
+       margin-left: -40px;
+  
+  }
+  
+  .corbeille2{
+  
+     position: absolute;
+      top: 45%;
+      font-size: 2.0em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+      text-align: right;
+       margin-left: -40px;
+  
+  }
+  
+  .corbeille3{
+  
+    position: absolute;
+      top: 70%;
+      font-size: 2.0em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+     text-align: right;
+     margin-left: -40px;
+  
+  }
+  
+  .corbeille4{
+  
+     position: absolute;
+      top: 95%;
+      font-size: 2.0em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+      text-align: right;
+        margin-left: -40px;
+  }
+  
+  
+  
+  
+  .write1{
+  
+     position: absolute;
+      top: 20%;
+      font-size: 2.0em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+      text-align: right;
+       margin-left: -70px;
+  
+  }
+  
+  .write2{
+  
+     position: absolute;
+      top: 45%;
+      font-size: 2.0em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+      text-align: right;
+       margin-left: -70px;
+  
+  }
+  
+  .write3{
+  
+    position: absolute;
+      top: 70%;
+      font-size: 2.0em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+     text-align: right;
+     margin-left: -70px;
+  
+  }
+  
+  .write4{
+  
+     position: absolute;
+      top: 95%;
+      font-size: 2.0em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+      text-align: right;
+        margin-left: -70px;
+  }
+  
+  .reglages{
+  
+    position: relative;
+      top: 0%;
+      font-size: 2.0em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+      text-align: right;
+  
+      margin-left: -20px;
+   
+  }
+  .btnstyle {
+    --background: #030e19 !important;
+    --background-activated: #030e19 !important;
+  
+}
+    .iconstyle{
+        height: 30px;
+        width: 30px;
+    }
+  
+  .help{
+  
+    position: absolute;
+      top: 0%;
+      font-size: 2.0em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+      text-align: left;
+      
+      margin-left: 20px;
+  }
+
+  .titre{
+    text-align: center; 
+    margin-top:-53px;
+    margin-left:125px;
+    position: absolute;
+  }
+}
+.imageCategorie2{
+  max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
 }
 
-.md-grid-offset .mbsc-row {
-    margin: 1em 0;
-    padding: 1px;
-    background: rgba(188, 141, 224, 0.58);
+.id1{
+  width: 100%;
+  height: 120px;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+
 }
+  
+  
+    
+  
+  
+  
+  
+  
