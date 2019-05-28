@@ -17,7 +17,7 @@ import { Http, Response, RequestOptions, Headers, HttpModule } from '@angular/ht
 export class HomePage implements OnInit {
 
 donnees: Observable<any>;
-tableauCategories;
+tableauCategories: any;
 
 
 constructor(public navCtrl: NavController, public httpClient: HttpClient, private router: Router, private http: Http) { }
