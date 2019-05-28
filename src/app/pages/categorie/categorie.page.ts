@@ -23,11 +23,11 @@ export class CategoriePage implements OnInit {
 
     ngOnInit() {
         this.myId = this.activatedRoute.snapshot.paramMap.get('myid');
-        this.donnees = this.httpClient.get('http://localhost:8888/API_QUIDE/api/etablissement/read.php');
+        this.donnees = this.httpClient.get('http://localhost:80/API_QUIDE/api/etablissement/read.php');
         this.donnees.subscribe(data => {
           this.tableauEtablissement = data;
         })
-        this.donnees = this.httpClient.get('http://localhost:8888/API_QUIDE/api/lieuinsolite/read.php');
+        this.donnees = this.httpClient.get('http://localhost:80/API_QUIDE/api/lieuinsolite/read.php');
         this.donnees.subscribe(data => {
           this.tableauLieuInsolite = data;
         })
