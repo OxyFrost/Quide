@@ -1,11 +1,53 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>profil</ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content padding>
+<ion-content class="card-background-page">
+    
+  
+<div>
 
 
+  <div class="reglages"  >
+    <ion-button  class="btnstyle" routerDirection="forward" routerLink="/pages/parametres">
+      <ion-icon name="cog" class="iconstyle"></ion-icon>
+    </ion-button>
+  </div>
+ 
+  <div class="titre">
+      <h1 style="font-weight: 450;">Mes Publications</h1>
+  </div>
+  <div class="help">
+    <ion-button  class="btnstyle" routerDirection="forward" routerLink="/tabs/aide">
+      <ion-icon name="ios-help-buoy" class="iconstyle"></ion-icon>
+    </ion-button>
+  </div>
+</div>
+<!-- <div class="filtre">
+    <img src="assets/img/filter.svg"></div>
+ -->
+ 
 
+ <div style="border:1px solid pink;" *ngFor="let item of tableauCategories | keyvalue" size="6" routerDirection="root"
+ routerLink="/liste-lieu/{{ item.key }}">
+ <ion-card>
+    <img src="assets/img/categorie/{{tableauCategories[item.key].idCat}}.jpg">
+    <div class="card-title">{{ tableauCategories[item.key].nomCat }}</div>
+    <div class="card-subtitle">{{ tableauCategories[item.key].nomCat }}</div> 
+  </ion-card>
+
+<div class="corbeille1">
+    <ion-icon name="ios-trash"></ion-icon>
+  </div>
+
+
+
+<div class="write1">
+<ion-icon name="ios-create"></ion-icon></div>
+
+</div>
+
+
+
+
+  
+  
 </ion-content>
+
