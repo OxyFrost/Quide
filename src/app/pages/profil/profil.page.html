@@ -26,9 +26,9 @@
  
 
  <div style="border:1px solid pink;" *ngFor="let item of tableauCategories | keyvalue" size="6" routerDirection="root"
- routerLink="/liste-lieu/{{ item.key }}">
+ routerLink="/liste-lieu/{{ item.key }}" class="id1">
  <ion-card>
-    <img src="assets/img/categorie/{{tableauCategories[item.key].idCat}}.jpg">
+    <img src="assets/img/categorie/{{tableauCategories[item.key].idCat}}.jpg" class="imageCategorie2">
     <div class="card-title">{{ tableauCategories[item.key].nomCat }}</div>
     <div class="card-subtitle">{{ tableauCategories[item.key].nomCat }}</div> 
   </ion-card>
