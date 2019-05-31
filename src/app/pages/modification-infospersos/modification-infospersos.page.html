@@ -1,3 +1,63 @@
 <ion-content>
+    <div class="label">
+        <h1>Mes informations</h1>
+    </div>
 
+    <ion-button class="add-btn" fill="clear">
+        <ion-icon class="add-icon" src="assets/icon/plus.svg"></ion-icon>
+    </ion-button>
+
+    <ion-avatar class="avatar"><img src="assets/img/no_thumbnail.jpg"></ion-avatar>
+
+    <div class="content-block">
+        <ion-grid>
+                <ion-row>
+                    <ion-col size="12">
+                        <div>
+                            <h1>Nom*</h1>
+                                <ion-input class="form" type="text" required="required"></ion-input>
+                        </div>
+                    </ion-col>
+                </ion-row>
+
+                <div>
+                    <h1>Prénom*</h1>
+                        <ion-input class="form" type="text" required="required"></ion-input>
+                </div>
+
+                <div>
+                    <h1>Téléphone*</h1>
+                        <ion-input class="form" type="text" required="required"></ion-input>
+                </div>
+
+                <div>
+                    <h1>Adresse e-mail*</h1>
+                        <ion-input class="form" type="text" required="required"></ion-input>
+                </div>
+
+                <div>
+                    <h1>Mot de passe*</h1>
+                        <ion-input class="form" type="text" required="required"></ion-input>
+                </div>
+
+                <div>
+                    <h1>Confirme ton mot de passe*</h1>
+                        <ion-input class="form" type="text" required="required"></ion-input>
+                </div>
+
+                <div class="boutons">
+                    <ion-col size="11">
+                        <ion-row>
+                            <div class="btn-annuler">
+                                <ion-button class="annuler" fill="clear" mode="ios" href="">Annuler</ion-button>
+                            </div>
+
+                            <div class="btn-sauvegarder">
+                                <ion-button class="sauvegarder" fill="solid" mode="ios" href="">Sauvegarder</ion-button>
+                            </div>
+                        </ion-row>
+                    </ion-col>
+                </div>
+        </ion-grid>
+    </div>
 </ion-content>
