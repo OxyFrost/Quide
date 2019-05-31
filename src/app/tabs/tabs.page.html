@@ -12,11 +12,9 @@
         <ion-tab-button tab="favoris">
             <ion-icon name="heart"></ion-icon>
         </ion-tab-button>
-        <div *ngIf="this.userPostData.idUser != ''; else elseBlock">
-            <ion-tab-button tab="profil">
-                <ion-icon name="person"></ion-icon>
+        <ion-tab-button tab="profil" *ngIf="this.userPostData.idUser != ''; else elseBlock">
+            <ion-icon name="person"></ion-icon>
             </ion-tab-button>
-        </div>
         <ng-template #elseBlock>
             <ion-tab-button tab="connexion">
                 <ion-icon name="person"></ion-icon>
