@@ -12,35 +12,26 @@ export class ModificationLieuPage {
 
     async presentActionSheet() {
       const actionSheet = await this.actionSheetController.create({
-        header: 'Albums',
+        header: 'Options',
+
         buttons: [{
-          text: 'Delete',
+          text: 'Supprimer la photo',
           role: 'destructive',
-          icon: 'trash',
+          icon: '',
           handler: () => {
             console.log('Delete clicked');
           }
+
         }, {
-          text: 'Share',
-          icon: 'share',
+          text: 'Modifier la photo',
+          icon: '',
           handler: () => {
-            console.log('Share clicked');
+            console.log('Edit clicked');
           }
+
         }, {
-          text: 'Play (open modal)',
-          icon: 'arrow-dropright-circle',
-          handler: () => {
-            console.log('Play clicked');
-          }
-        }, {
-          text: 'Favorite',
-          icon: 'heart',
-          handler: () => {
-            console.log('Favorite clicked');
-          }
-        }, {
-          text: 'Cancel',
-          icon: 'close',
+          text: 'Annuler',
+          icon: '',
           role: 'cancel',
           handler: () => {
             console.log('Cancel clicked');
