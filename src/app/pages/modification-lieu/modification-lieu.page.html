@@ -7,9 +7,9 @@
                 <ion-icon src="assets/icon/backward.svg" onclick="history.back()"></ion-icon>
             </div>
 
-        <div class="menu">
-                    <ion-icon (click)="presentActionSheet()" src="assets/icon/menu.svg"></ion-icon>
-        </div>
+            <div class="menu">
+                <ion-icon (click)="presentActionSheet()" src="assets/icon/menu.svg"></ion-icon>
+            </div>
 
         </ion-row>
     </div>
@@ -17,10 +17,12 @@
     <div class="content-block">
         <ion-grid>
                 <ion-row>
-                    <div>
-                        <h1>Nom*</h1>
-                            <ion-input class="nom" type="text" required="required"></ion-input>
-                    </div>
+                    <ion-col size="12">
+                        <div>
+                            <h1>Nom*</h1>
+                                <ion-input class="nom" type="text" required="required"></ion-input>
+                        </div>
+                    </ion-col>
                 </ion-row>
 
                 <div>
