@@ -1,0 +1,130 @@
+.content-block {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+// style input //
+
+.nom, .desc, .address, .phone-number, .time, .website {
+    border: none;
+    border: solid 1px #D5D5D5;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.nom, .address, .phone-number, .time, .website {
+    height: 30px;
+    width: auto;
+    margin: auto;
+}
+
+.nom {
+    width: 318px;
+}
+
+.desc {
+    height: 60px;
+    margin-bottom: 10px;
+    margin: auto;
+}
+
+.address, .phone-number, .website {
+    margin-left: 10px;
+}
+
+.range-knob {
+    --bar-background: #fff;
+    --bar-background-active: #fff;
+    --knob-size: 10px;
+    color: #fff;
+}
+
+// icônes //
+
+.star, .heart, .pin, .phone, .timetable, .web, .euro {
+    width: 23px;
+    height: 23px;
+    color: #fff;
+    padding-right: 5px;
+}
+
+.timetable {
+    margin-top: 10px;
+}
+
+.time {
+    width: 60px;
+}
+
+// input //
+
+.time, .nom, .desc, .address, .website {
+    font-size: 14px;
+    color: #030D17;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+// image //
+
+.img-block {
+    width: 100%;
+    height: 200px;
+}
+
+.fiche-img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.previous-page {
+    padding-left: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+}
+
+.menu {
+    position: absolute;
+    z-index: 1;
+    right: 30px;
+    top: 60px;
+    --background: none;
+}
+
+// police //
+
+h1 {
+    padding-left: 20px;
+}
+
+p {
+    color: #fff;
+    font-weight: 300;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+}
+
+// boutons //
+
+.annuler {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    border: none;
+    border: solid 1px #ffdd21;
+    border-radius: 8px;
+    width: 130px;
+    margin-right: 20px;
+    color: #ffdd21;
+}
+
+.sauvegarder {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    border: none;
+    border-radius: 8px;
+    width: 160px;
+    --background: #ffdd21;
+    --color: #030D17;
+}
