@@ -3,11 +3,19 @@
         <h1>Mes informations</h1>
     </div>
 
-    <ion-button class="add-btn" fill="clear">
-        <ion-icon class="add-icon" src="assets/icon/plus.svg"></ion-icon>
-    </ion-button>
+    <ion-row>
+        <div class="previous-page">
+            <ion-icon src="assets/icon/backward.svg" onclick="history.back()"></ion-icon>
+        </div>
 
-    <ion-avatar class="avatar"><img src="assets/img/no_thumbnail.jpg"></ion-avatar>
+        <div>
+            <ion-button class="add-btn" fill="clear">
+                <ion-icon class="add-icon" src="assets/icon/plus.svg"></ion-icon>
+        </ion-button>
+
+        <ion-avatar class="avatar"><img src="assets/img/no_thumbnail.jpg"></ion-avatar>
+        </div>
+    </ion-row>
 
     <div class="content-block">
         <ion-grid>
