@@ -1,16 +1,15 @@
 
 <ion-content class="card-background-page">
-    
-  
-<div>
 
+
+<div>
 
   <div class="reglages"  >
     <ion-button  class="btnstyle" routerDirection="forward" routerLink="/pages/parametres">
       <ion-icon name="cog" class="iconstyle"></ion-icon>
     </ion-button>
   </div>
- 
+
   <div class="titre">
       <h1 style="font-weight: 450;">Mes Publications</h1>
   </div>
@@ -23,8 +22,8 @@
 <!-- <div class="filtre">
     <img src="assets/img/filter.svg"></div>
  -->
- 
- 
+
+
 <ion-grid padding>
     <ion-row *ngFor="let item of tableauCategories | keyvalue" size="" routerDirection="root"
     routerLink="/liste-lieu/{{ item.key }}">
@@ -41,8 +40,4 @@
 
 </ion-grid>
 
-
-  
-  
 </ion-content>
-
