@@ -14,11 +14,11 @@
     <ion-img class="add-img" src="assets/img/no_thumbnail.jpg"></ion-img>
 
     <div class="form">
-        <h1>Nom</h1>
+        <h1>Nom*</h1>
                 <ion-input class="nom" type="text" required="required"></ion-input>
 
-        <h1>Catégorie</h1>
-                <ion-select class="form-category" placeholder="Choisissez une catégorie">
+        <h1>Catégorie*</h1>
+                <ion-select class="form-category" placeholder="Choisissez une catégorie" mode="ios" cancelText="Annuler" okText="Valider">
                     <ion-select-option value="restaurant">Restaurant</ion-select-option>
                     <ion-select-option value="bar">Bar</ion-select-option>
                     <ion-select-option value="pub">Pub</ion-select-option>
@@ -26,32 +26,39 @@
                     <ion-select-option value="place">Place</ion-select-option>
                 </ion-select>
 
-        <h1>Adresse</h1>
+        <h1>Adresse*</h1>
                 <ion-input class="address" type="text"></ion-input>
 
         <ion-row>
             <ion-col size="5">
-                <h1>Code Postal</h1>
+                <h1>Code Postal*</h1>
                         <ion-input class="zip-code" type="number" required="required"></ion-input>
             </ion-col>
 
             <ion-col size="1"></ion-col>
 
         <ion-col size="6">
-            <h1>Ville</h1>
+            <h1>Ville*</h1>
                 <ion-input class="city" type="text" required="required"></ion-input>
         </ion-col>
 
         </ion-row>
 
-        <h1>Pays</h1>
-            <ion-input class="country" type="text" required="required"></ion-input>
-
         <h1>Téléphone</h1>
             <ion-input class="tel" type="text"></ion-input>
 
-        <h1>Description</h1>
+        <h1>Description*</h1>
             <ion-input class="desc" type="text" required="required"></ion-input>
+    </div>
+
+    <div class="budget">
+        <h1>Budget</h1>
+            <ion-row>
+                    <ion-range class="range-knob" min="1" max="5" step="1" snaps="true" mode="ios" ticks="true" pin="true">
+                        <ion-icon size="small" slot="start" src="assets/icon/euro.svg"></ion-icon>
+                        <ion-icon slot="end" src="assets/icon/euro.svg"></ion-icon>
+                    </ion-range>
+            </ion-row>
     </div>
 
     <div class="boutons">

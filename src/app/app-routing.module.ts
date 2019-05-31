@@ -10,7 +10,9 @@ const routes: Routes = [
   { path: 'profil', loadChildren: './pages/profil/profil.module#ProfilPageModule' },
   { path: 'connexion', loadChildren: './pages/connexion/connexion.module#ConnexionPageModule' },
   { path: 'inscription', loadChildren: './pages/inscription/inscription.module#InscriptionPageModule' },
-  { path: 'fiche', loadChildren: './pages/fiche/fiche.module#FichePageModule' }
+  { path: 'fiche', loadChildren: './pages/fiche/fiche.module#FichePageModule' },
+  { path: 'modification-lieu', loadChildren: './pages/modification-lieu/modification-lieu.module#ModificationLieuPageModule' }
+
 ];
 @NgModule({
   imports: [

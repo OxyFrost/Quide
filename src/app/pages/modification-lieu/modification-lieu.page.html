@@ -1,0 +1,93 @@
+<ion-content>
+    <div class="img-block">
+        <ion-img class="fiche-img" src="assets/img/bar.jpg"></ion-img>
+
+        <ion-row>
+            <div class="previous-page">
+                <ion-icon src="assets/icon/backward.svg" onclick="history.back()"></ion-icon>
+            </div>
+
+        <div class="menu">
+                    <ion-icon (click)="presentActionSheet()" src="assets/icon/menu.svg"></ion-icon>
+        </div>
+
+        </ion-row>
+    </div>
+
+    <div class="content-block">
+        <ion-grid>
+                <ion-row>
+                    <div>
+                        <h1>Nom*</h1>
+                            <ion-input class="nom" type="text" required="required"></ion-input>
+                    </div>
+                </ion-row>
+
+                <div>
+                    <h1>Description*</h1>
+                        <ion-input class="desc" type="text" required="required"></ion-input>
+                </div>
+
+                        <ion-col size="6">
+                            <ion-row>
+                                <ion-img class="pin" src="assets/icon/placeholder.svg"></ion-img>
+                                <ion-input class="address" type="text" required="required"></ion-input>
+                            </ion-row>
+                        </ion-col>
+
+                        <ion-col size="8">
+                            <ion-row>
+                                <ion-img class="phone" src="assets/icon/phone-call.svg"></ion-img>
+                                <ion-input class="phone-number" type="tel"></ion-input>
+                            </ion-row>
+                        </ion-col>
+
+                            <ion-row>
+                                <ion-img class="timetable" src="assets/icon/time.svg"></ion-img>
+                                    <ion-col size="12">
+                                        <p>
+                                            <ion-row><ion-col size="5">Lundi</ion-col><ion-input class="time" type="text"></ion-input>&nbsp;-&nbsp;<ion-input class="time" type="text"></ion-input></ion-row><br>
+                                            <ion-row><ion-col size="5">Mardi</ion-col><ion-input class="time" type="text"></ion-input>&nbsp;-&nbsp;<ion-input class="time" type="text"></ion-input></ion-row><br>
+                                            <ion-row><ion-col size="5">Mercredi</ion-col><ion-input class="time" type="text"></ion-input>&nbsp;-&nbsp;<ion-input class="time" type="text"></ion-input></ion-row><br>
+                                            <ion-row><ion-col size="5">Jeudi</ion-col><ion-input class="time" type="text"></ion-input>&nbsp;-&nbsp;<ion-input class="time" type="text"></ion-input></ion-row><br>
+                                            <ion-row><ion-col size="5">Vendredi</ion-col><ion-input class="time" type="text"></ion-input>&nbsp;-&nbsp;<ion-input class="time" type="text"></ion-input></ion-row><br>
+                                            <ion-row><ion-col size="5">Samedi</ion-col><ion-input class="time" type="text"></ion-input>&nbsp;-&nbsp;<ion-input class="time" type="text"></ion-input></ion-row><br>
+                                            <ion-row><ion-col size="5">Dimanche</ion-col><ion-input class="time" type="text"></ion-input>&nbsp;-&nbsp;<ion-input class="time" type="text"></ion-input></ion-row><br>
+                                        </p>
+                                    </ion-col>
+                            </ion-row>
+
+                            <ion-col size="6">
+                                <ion-row>
+                                    <ion-img class="web" src="assets/icon/web.svg"></ion-img>
+                                    <ion-input class="website" type="url"></ion-input>
+                                </ion-row>
+                            </ion-col>
+
+                            <div>
+                                <h1>Budget</h1>
+                                    <ion-row>
+                                            <ion-range class="range-knob" min="1" max="5" step="1" snaps="true" mode="ios" ticks="true" pin="true">
+                                                <ion-icon size="small" slot="start" src="assets/icon/euro.svg"></ion-icon>
+                                                <ion-icon slot="end" src="assets/icon/euro.svg"></ion-icon>
+                                            </ion-range>
+                                    </ion-row>
+                            </div>
+
+                            <div class="boutons">
+                                <ion-col size="11">
+                                    <ion-row>
+                                        <div class="btn-annuler">
+                                            <ion-button class="annuler" fill="clear" mode="ios" href="">Annuler</ion-button>
+                                        </div>
+
+                                        <div class="btn-sauvegarder">
+                                            <ion-button class="sauvegarder" fill="solid" mode="ios" href="">Sauvegarder</ion-button>
+                                        </div>
+                                    </ion-row>
+                                </ion-col>
+                            </div>
+
+                    </ion-grid>
+                </div>
+</ion-content>
