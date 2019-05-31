@@ -77,19 +77,24 @@
 }
 
 .previous-page {
-    padding-left: 20px;
+    padding-left: 30px;
     position: absolute;
     z-index: 1;
-    top: 60px;
+    top: 80px;
 }
 
 .menu {
     position: absolute;
     z-index: 1;
     right: 30px;
-    top: 60px;
+    top: 80px;
     --background: none;
     font-size: 12px;
+}
+
+.previous-icon, .menu-icon {
+    width: 20px;
+    height: 20px;
 }
 
 // police //
