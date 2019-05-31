@@ -1,0 +1,81 @@
+<ion-content>
+    <ng-container *ngFor="let item of infoEtablissement | keyvalue">
+        <div class="img-block">
+            <ion-img class="fiche-img" src="assets/img/bar.jpg"></ion-img>
+        </div>
+
+        <div class="content-block">
+            <ion-grid>
+                <ion-row>
+                    <div class="title">
+                        <ion-col size="4"><h1>{{infoEtablissement[item.key].nomEtab}}</h1></ion-col>
+                    </div>
+                    <ion-col size="7"></ion-col>
+
+                    <div class="fav">
+                        <ion-col size="2"><ion-icon class="heart" src="assets/icon/like.svg"></ion-icon></ion-col>
+                    </div>
+                </ion-row>
+
+                <div class="stars">
+                    <ion-col size="7">
+                        <ion-row>
+                            <ion-img class="star" src="assets/icon/filled-star.svg"></ion-img>
+                            <ion-img class="star" src="assets/icon/filled-star.svg"></ion-img>
+                            <ion-img class="star" src="assets/icon/filled-star.svg"></ion-img>
+                            <ion-img class="star" src="assets/icon/star.svg"></ion-img>
+                            <ion-img class="star" src="assets/icon/star.svg"></ion-img>
+                        </ion-row>
+                    </ion-col>
+                </div>
+
+                <div class="description">
+                    <p class="desc-text">{{infoEtablissement[item.key].descriptionEtab}}</p>
+                    <ion-col size="8">
+                        <ion-row>
+                            <ion-img class="pin" src="assets/icon/placeholder.svg"></ion-img>
+                            <a class="address" href="https://www.google.fr/maps/place/4+Rue+du+Faubourg+Montmartre,+75009+Paris/@48.8717305,2.3411588,17z/data=!3m1!4b1!4m5!3m4!1s0x47e66e3e7c42e39d:0xa321db26ffb8227c!8m2!3d48.8717305!4d2.3433475"> {{infoEtablissement[item.key].adresseEtab}},{{infoEtablissement[item.key].villeEtab}} {{infoEtablissement[item.key].codePostalEtab}}</a>
+                        </ion-row>
+                    </ion-col>
+
+                    <ion-col size="8">
+                        <ion-row>
+                            <ion-img class="phone" src="assets/icon/phone-call.svg"></ion-img>
+                            <p class="phone-number">{{infoEtablissement[item.key].telEtab}}</p>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-img class="time" src="assets/icon/time.svg"></ion-img>
+                            <p class="schedule">
+                                <ion-col size="4">Lundi</ion-col><ion-col size="6">12:30 - 22:30</ion-col><br>
+                                <ion-col size="4">Mardi</ion-col><ion-col size="6">12:30 - 22:30</ion-col><br>
+                                <ion-col size="4">Mercredi</ion-col><ion-col size="6">14:30 - 21:30</ion-col><br>
+                                <ion-col size="4">Jeudi</ion-col><ion-col size="6">12:30 - 22:30</ion-col><br>
+                                <ion-col size="4">Vendredi</ion-col><ion-col size="6">12:30 - 23:30</ion-col><br>
+                            </p>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-img class="web" src="assets/icon/web.svg"></ion-img>
+                            <a class="website" href="http://elprincipe-ristorante.com">{{infoEtablissement[item.key].siteEtab}}</a>
+                        </ion-row>
+
+                        <div class="budget">
+                            <ion-col col="7">
+                                <ion-row>
+                                    <ion-img class="euro" src="assets/icon/euro.svg"></ion-img>
+                                    <p class="euro-amount">€€€••</p>
+                                </ion-row>
+                            </ion-col>
+                        </div>
+
+                    </ion-col>
+                </div>
+
+            </ion-grid>
+
+
+
+        </div>
+    </ng-container>
+</ion-content>

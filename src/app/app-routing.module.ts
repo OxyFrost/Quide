@@ -9,9 +9,15 @@ const routes: Routes = [
   { path: 'favoris', loadChildren: './pages/favoris/favoris.module#FavorisPageModule' },
   { path: 'profil', loadChildren: './pages/profil/profil.module#ProfilPageModule' },
   { path: 'connexion', loadChildren: './pages/connexion/connexion.module#ConnexionPageModule' },
-  { path: 'inscription', loadChildren: './pages/inscription/inscription.module#InscriptionPageModule' },
+  { path: 'modification-lieu', loadChildren: './pages/modification-lieu/modification-lieu.module#ModificationLieuPageModule' },
   { path: 'fiche', loadChildren: './pages/fiche/fiche.module#FichePageModule' },
-  { path: 'modification-lieu', loadChildren: './pages/modification-lieu/modification-lieu.module#ModificationLieuPageModule' }
+  { path: 'categorie/:myid', loadChildren: './pages/categorie/categorie.module#CategoriePageModule' },
+  { path: 'inscription', loadChildren: './pages/inscription/inscription.module#InscriptionPageModule' },
+  { path: 'info-lieu/:myid', loadChildren: './pages/info-lieu/info-lieu.module#InfoLieuPageModule' },
+  { path: 'liste-lieu/:myid', loadChildren: './pages/liste-lieu/liste-lieu.module#ListeLieuPageModule' },
+  { path: 'info-etablissement/:myid', loadChildren: './pages/info-etablissement/info-etablissement.module#InfoEtablissementPageModule' },
+  { path: 'parametres', loadChildren: './pages/parametres/parametres.module#ParametresPageModule' },
+  { path: 'aide', loadChildren: './pages/aide/aide.module#AidePageModule' }
 
 ];
 @NgModule({

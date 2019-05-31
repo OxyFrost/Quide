@@ -12,34 +12,20 @@ import { Http, Response, RequestOptions, Headers, HttpModule } from '@angular/ht
   selector: 'app-home',
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
+
 })
 export class HomePage implements OnInit {
 
-
 donnees: Observable<any>;
-tableauCategories;
+tableauCategories: any;
 
-/* EXEMPLE D'UN OBJET JSON EN ARRAY
-jsonObj = {
-    '1' : [ {"nomCat" : "title1" , "idCat" : "desc1" }],
-    '2' : [ {"nomCat" : "title2" , "idCat" : "desc2" }],
-    '3' : [ {"nomCat" : "title3" , "idCat" : "desc3" }],
-    '4' : [ {"nomCat" : "title4" , "idCat" : "desc4" }],
-    '5' : [ {"nomCat" : "title5" , "idCat" : "desc5" }]
-}*/
-
-idCategorieAPI;
-ObjectToArray;
-nomCategorieAPI;
 
 constructor(public navCtrl: NavController, public httpClient: HttpClient, private router: Router, private http: Http) { }
 
   ngOnInit() {
-      this.donnees = this.httpClient.get('http://localhost:80/API_QUIDE/api/categorie/read.php');
+      this.donnees = this.httpClient.get('http://localhost:8888/API_QUIDE/api/categorie/read.php');
       this.donnees.subscribe(data => {
         this.tableauCategories = data;
-          console.log(this.tableauCategories);
       });
   }
-
 }

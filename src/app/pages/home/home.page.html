@@ -1,82 +1,15 @@
 <ion-content padding>
     <ion-grid>
         <ion-row>
-            <ion-col col-6>
-
-                <div class="espace">
+            <ion-col *ngFor="let item of tableauCategories | keyvalue" size="6" routerDirection="root"
+                     routerLink="/liste-lieu/{{ item.key }}">
+                <div class="id1">
+                    <ion-img class="imageCategorie2"
+                             src="assets/img/categorie/{{tableauCategories[item.key].idCat}}.jpg"></ion-img>
+                    <h2 class="titreCategorie">{{ tableauCategories[item.key].nomCat }}</h2>
                 </div>
-
             </ion-col>
-        </ion-row>
-
-        <!--LIGNE 2-->
-        <ion-row>
-
-            <ion-col *ngFor="let item of tableauCategories | keyvalue">
-                <ion-card>
-                    <ion-img src="assets/img/party.jpg">
-
-                        <ion-card-subtitle>CHUI PERDU</ion-card-subtitle>
-                        <ion-card-title>Card Title</ion-card-title>
-                        <p>yolo</p>
-                    </ion-img>
-                    <ion-card-header>
-
-                        <ion-card-subtitle>{{tableauCategories[item.key].idCat}}</ion-card-subtitle>
-                        <!-- affiche uniquement pour des tests -->
-
-                        <ion-card-title> {{ tableauCategories[item.key].nomCat }}</ion-card-title>
-                    </ion-card-header>
-
-                    <ion-card-content>
-
-                        Keep
-                    </ion-card-content>
-                </ion-card>
-            </ion-col>
-
-            <!-- <ion-col>
-                <ion-card>
-                    <ion-img src="assets/img/party.jpg">
-
-                        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-                    <ion-card-title>Card Title</ion-card-title> <p>yolo</p>
-                    </ion-img>
-                  <ion-card-header>
-
-                    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-                    <ion-card-title>Card Title</ion-card-title>
-                  </ion-card-header>
-
-                  <ion-card-content>
-
-                    Keep
-                  </ion-card-content>
-                </ion-card>
-            </ion-col>
-            <ion-col>
-                <ion-card>
-                    <ion-img src="assets/img/party.jpg">
-
-                        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-                    <ion-card-title>Card Title</ion-card-title> <p>yolo</p>
-                    </ion-img>
-                  <ion-card-header>
-
-                    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-                    <ion-card-title>Card Title</ion-card-title>
-                  </ion-card-header>
-
-                  <ion-card-content>
-
-                    Keep
-                  </ion-card-content>
-                </ion-card>
-            </ion-col> -->
-
         </ion-row>
 
     </ion-grid>
-
-
 </ion-content>

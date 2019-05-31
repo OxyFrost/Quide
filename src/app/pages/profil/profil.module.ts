@@ -23,4 +23,8 @@ const routes: Routes = [
   ],
   declarations: [ProfilPage]
 })
-export class ProfilPageModule {}
+export class ProfilPageModule {
+
+
+  
+}

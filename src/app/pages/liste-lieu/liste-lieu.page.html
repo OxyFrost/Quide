@@ -1,0 +1,50 @@
+<ion-content padding>
+
+    <ion-button class="retour" routerDirection="forward"
+                routerLink="/tabs/home">
+        <ion-icon name="arrow-back"></ion-icon>
+
+    </ion-button>
+
+    <ion-grid>
+        <ion-row style="margin-top:-60px;"> 
+            <ng-container *ngFor="let item of tableauEtablissement | keyvalue">
+                <ion-card
+                          routerDirection="forward"
+                          routerLink="/info-etablissement/{{tableauEtablissement[item.key].idEtab}}">
+
+                    <ng-container
+                        *ngIf=" myId == 4 && (tableauEtablissement[item.key].sousCatEtab == 1 || tableauEtablissement[item.key].sousCatEtab == 2)">
+                        <img src="assets/img/bar.jpg">
+                        <div class="test">
+                            <ion-icon name="heart-empty"></ion-icon>
+                        </div>
+
+                        <div class="card-title"> {{ tableauEtablissement[item.key].nomEtab }} </div>
+                        <div class="card-subtitle">{{ tableauEtablissement[item.key].codePostalEtab }}
+                            - {{ tableauEtablissement[item.key].villeEtab }} </div>
+                    </ng-container>
+                </ion-card>
+            </ng-container>
+
+            <ng-container *ngFor="let item of tableauLieuInsolite | keyvalue">
+                <ion-card
+                          routerDirection="forward"
+                          routerLink="/info-lieu/{{tableauLieuInsolite[item.key].idLieu}}">
+
+                    <ng-container *ngIf=" myId == 2">
+
+                        <img src="assets/img/bar.jpg">
+                        <div class="test">
+                            <ion-icon name="heart-empty"></ion-icon>
+                        </div>
+
+
+                        <div class="card-title">  {{ tableauLieuInsolite[item.key].nomLieu }} </div>
+                        <div class="card-subtitle">{{ tableauLieuInsolite[item.key].codePostalLieu }}
+                            - {{ tableauLieuInsolite[item.key].villeLieu }} </div>
+                    </ng-container>
+                </ion-card>
+            </ng-container>
+
+        </ion-row>

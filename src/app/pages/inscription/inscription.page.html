@@ -1,47 +1,59 @@
-<ion-content>
+<ion-content padding>
+  
+    <ion-button class="retour" routerDirection="forward"
+                routerLink="/tabs/connexion">
+        <ion-icon name="arrow-back"></ion-icon>
+        Retour
+    </ion-button>
 
-    <ion-input type="file" accept="image/*"></ion-input>
-    <ion-radio-group>
-        <ion-label>Professionnel</ion-label>
-        <ion-radio slot="start" value="Professionnel" checked></ion-radio>
+    <br/><br/>
 
-        <ion-label>Particulier</ion-label>
-        <ion-radio slot="start" value="Particulier"></ion-radio>
-    </ion-radio-group>
 
-    <ion-radio-group>
-        <ion-list-header>Civilité</ion-list-header>
+    <div class="login-block">
 
-        <ion-label>Homme</ion-label>
-        <ion-radio slot="start" value="Homme" checked></ion-radio>
+        <ion-radio-group [(ngModel)]="civilite">
+            <ion-radio checked class="btnRadio" slot="start" value="Mr"></ion-radio>
+            <ion-label class="civilite" value="Mr" style="margin-left:20px;">Mr.</ion-label>
 
-        <ion-label>Femme</ion-label>
-        <ion-radio slot="start" value="Femme"></ion-radio>
-    </ion-radio-group>
-    <ion-item class="form">
-        <h1>Nom*</h1>
-    <ion-input></ion-input>
-    </ion-item>
-    <ion-item class="form">
-        <h1>Prénom*</h1>
+            <ion-label class="civilite" style="margin-left:10px;"></ion-label>
 
-        <ion-input></ion-input>
-    </ion-item>
-    <ion-item class="form">
-        <h1>Téléphone*</h1>
-        <ion-input></ion-input>
-    </ion-item>
-    <ion-item class="form">
-        <h1>Adresse Email*</h1>
-    <ion-input></ion-input>
-    </ion-item>
-    <ion-item class="form">
-        <h1>Mot de passe*</h1>
-        <ion-input></ion-input>
-    </ion-item>
-    <ion-item class="form">
-        <h1>Confirmer mot de passe*</h1>
-        <ion-input></ion-input>
-    </ion-item>
-    <ion-button class="se-connecter">C'est parti !</ion-button>
+            <ion-radio class="btnRadio" slot="start" value="Mme"></ion-radio>
+            <ion-label class="civilite" value="Mme" style="margin-left: 20px;">Mme.</ion-label>
+        </ion-radio-group>
+
+        <!-- Nom -->
+        <h1 class="title">Nom</h1>
+        <ion-input [(ngModel)]="nomInput" class="champsP" required="required" type="nom"></ion-input>
+
+        <!-- Prénom -->
+        <h1 class="title">Prénom</h1>
+        <ion-input [(ngModel)]="prenomInput" class="champsP" required="required" type="prenom"></ion-input>
+
+        <!-- Téléphone -->
+        <h1 class="title">Téléphone</h1>
+        <ion-input [(ngModel)]="telInput" class="champsP" required="required" type="tel"></ion-input>
+
+        <!-- Adresse Email -->
+        <h1 class="title">Email</h1>
+        <ion-input [(ngModel)]="emailInput" class="champsP" required="required" type="email"></ion-input>
+
+        <!-- Date de Naissance -->
+        <h1 class="title">Date de Naissance</h1>
+        <ion-input [(ngModel)]="dateInput" class="champsP" required="required" type="date"></ion-input>
+
+        <!-- Mot de passe-->
+        <h1 class="title">Mot de passe</h1>
+        <ion-input [(ngModel)]="mdpInput" class="champsP" required="required" type="password"></ion-input>
+
+        <!-- Confirmer Mot de passe-->
+        <h1 class="title">Confirmer Mot de passe</h1>
+        <ion-input [(ngModel)]="CmdpInput" class="champsP" required="required" type="password"></ion-input>
+
+        <div *ngIf="msg" class="ion-text-center">
+            <h1>{{ msg }}</h1>
+        </div>
+    </div>
+    <div class="sign-in">
+        <ion-button (click)="inscription()" class="se-connecter" fill="clear" mode="ios">C'est parti !</ion-button>
+    </div>
 </ion-content>
