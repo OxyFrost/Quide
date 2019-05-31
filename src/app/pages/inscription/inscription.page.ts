@@ -38,6 +38,7 @@ export class InscriptionPage implements OnInit {
           if (this.mdpInput === this.CmdpInput) {
               // Initialize Params Object
               let params = new HttpParams();
+
               // Begin assigning parameters
               params = params.append('email', this.emailInput);
               params = params.append('pwd', this.mdpInput);
@@ -47,7 +48,7 @@ export class InscriptionPage implements OnInit {
               params = params.append('tel', this.telInput);
               params = params.append('date', this.dateInput);
 
-              this.donnees = this.httpClient.put('http://localhost:8888/API_QUIDE/api/utilisateur/inscription.php', {params: params});
+              this.donnees = this.httpClient.put('http://localhost:80/API_QUIDE/api/utilisateur/inscription.php', {params: params});
               this.donnees.subscribe();
               this.msg = 'Inscription réussi !';
               if (this.msg === 'Inscription réussi !') {

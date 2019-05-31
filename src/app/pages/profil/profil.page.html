@@ -1,6 +1,4 @@
-
 <ion-content class="card-background-page">
-
 
 <div>
 
@@ -38,6 +36,33 @@
         </ion-col>
     </ion-row>
 
-</ion-grid>
+        <div class="titre">
+            <h1 style="font-weight: 450;">Mes Publications</h1>
+        </div>
+        <div class="help">
+            <ion-button class="btnstyle" routerDirection="forward" routerLink="/tabs/aide">
+                <ion-icon class="iconstyle" name="ios-help-buoy"></ion-icon>
+            </ion-button>
+        </div>
+    </div>
+    <!-- <div class="filtre">
+        <img src="assets/img/filter.svg"></div>
+     -->
+
+    <ion-grid padding>
+        <ion-row *ngFor="let item of tableauLieuInsolite | keyvalue" routerDirection="root" routerLink="/info-lieu/{{ item.key }}"
+                 size="">
+            <ion-col>
+                <div>
+                    <ion-img class="imageCategorie2"
+                             src="assets/img/bar.jpg"></ion-img>
+                    <h2 class="titreCategorie">{{ tableauLieuInsolite[item.key].nomCat }}</h2>
+                    <ion-icon class="corbeille1" name="ios-trash"></ion-icon>
+                    <ion-icon class="write1" name="ios-create"></ion-icon>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-button (click)="logout()">Logout</ion-button>
 
 </ion-content>

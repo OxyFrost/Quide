@@ -10,7 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
-
+import { AuthService } from './auth/auth.service';
 import {ListeLieuPageModule} from './pages/liste-lieu/liste-lieu.module';
 import {InfoLieuPageModule} from './pages/info-lieu/info-lieu.module';
 import {InscriptionPageModule} from './pages/inscription/inscription.module';
@@ -24,6 +24,7 @@ import {ConnexionPageModule} from './pages/connexion/connexion.module';
   providers: [
     StatusBar,
     SplashScreen,
+    AuthService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
